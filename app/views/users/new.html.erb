@@ -1,0 +1,33 @@
+<h1>User#signup</h1>
+<%= form_for :user, url: users_path do |f| %>
+	<% if @user.errors.any? %>
+		<div id="error_explanation">
+		<h2><%= pluralize(@user.errors.count, "error") %> prohibited
+		this post from being saved:</h2>
+		<u1>
+	<% for message in @user.errors.full_messages %>
+		<li><%= message %></li>
+	<% end %>
+	</u1>
+	</div>
+	<% end %>
+<% end %>
+
+<%= form_for @user do |f| %>
+
+   	<%= f.label :login %><br>
+
+ <%=  f.text_field :login%><br/>
+		<%= f.label :password %><br>
+
+ <%= f.text_field :password %><br/>
+		<%= f.label :password_confirmation %><br>
+
+ <%=  f.text_field :password_confirmation %><br/>
+		<%= f.label :email %><br>
+
+ <%=  f.text_field :email %><br/>
+
+
+  <%= f.submit %>
+ <% end %>

@@ -1,0 +1,14 @@
+<p>
+	<weak>Commenter:</weak>
+	<%= User.find_by_id(comment.user_id).login %>
+</p>
+<p>
+	<weak>Comment:</weak>
+	<%= comment.body %>
+</p>
+<p>
+	<% if current_user?(User.find_by_id(comment.user_id)) %>
+ 
+	<%= link_to 'Delete Comment', [comment.post, comment], method: :delete, data: {confirm: 'You sho bot dat?' } %>
+	<% end %>
+</p>

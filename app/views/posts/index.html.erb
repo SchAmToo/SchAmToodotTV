@@ -1,0 +1,29 @@
+<%= render 'sessions/session' %>
+
+<h1>Listing posts</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+	  <th>Author</th>
+  <th></th>
+	<th></th>
+	<th></th>
+  </tr>
+ 
+  <%  @posts.each do |post| %>
+    <tr>
+      <td><%= post.title %></td>
+      <td><%= post.text %></td>
+      <td><%= User.find_by_id(post.user_id).login %></td>
+	<td><%= link_to 'Show', post %></td>
+<% if current_user?(User.find_by_id(post.user_id)) %>
+	<td><%= link_to 'Edit', edit_post_path(post) %></td>
+	<td><%= link_to 'Delete', post_path(post), method: :delete, data: { confirm: 'You sho bot dat?' } %></td>
+  <% end %>  
+  </tr>
+  <% end %>
+</table>
+
+<%= link_to 'New', new_post_path %>

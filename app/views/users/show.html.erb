@@ -1,0 +1,33 @@
+
+<%= render 'sessions/session' %>
+
+
+<strong>User:</strong>
+<%= @user.login %>
+
+<p>
+ <%= link_to 'New', new_post_path %>
+</p>
+<p>
+  <%= link_to 'Settings', edit_user_path(current_user) %>
+<strong> Your posts: </strong>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+	<th></th>
+	<th></th>
+	<th></th>
+  </tr>
+  <% @user.posts.each do |post| %>
+    <tr>
+      <td><%= post.title %></td>
+      <td><%= post.text %></td>
+	<td><%= link_to 'Show', post %></td>
+  <% if @user == current_user %>
+	<td><%= link_to 'Edit', edit_post_path(post) %></td>
+	<td><%= link_to 'Delete', post_path(post), method: :delete, data: { confirm: 'You sho bot dat?' } %></td>
+  <% end %>
+  </tr>
+  <% end %>
+</table>

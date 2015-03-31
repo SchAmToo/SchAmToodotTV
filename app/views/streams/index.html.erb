@@ -1,0 +1,21 @@
+<h1>streams#index</h1>
+<p>TESTTTT</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Y19Sdl5_nXs" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="672" height="378" src="http://www.majorleaguegaming.com/player/embed/schamtoo" scrolling="no"></iframe>
+
+<%= render 'sessions/session' %>
+
+<h1>Listing streams</h1>
+ 
+<table>
+ 
+  <%  @streams.each do |stream| %>
+  		<td><%= stream.id %></td>
+    	<td><%= stream.source %></td>
+    	<td><%= stream.streamuri %></td>
+   
+  <% end %>
+</table>
+

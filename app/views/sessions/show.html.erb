@@ -1,0 +1,23 @@
+<strong>User:</strong>
+<%= User.find(current_user.id).login %>
+<p>
+
+<strong> Your posts: </strong>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+	<th></th>
+	<th></th>
+	<th></th>
+  </tr>
+  <% current_user.posts.each do |post| %>
+    <tr>
+      <td><%= post.title %></td>
+      <td><%= post.text %></td>
+	<td><%= link_to 'Show', post %></td>
+	<td><%= link_to 'Edit', edit_post_path(post) %></td>
+	<td><%= link_to 'Delete', post_path(post), method: :delete, data: { confirm: 'You sho bot dat?' } %></td>
+    </tr>
+  <% end %>
+</table>

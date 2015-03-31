@@ -1,0 +1,15 @@
+
+
+<%= render "sessions/session" %> 
+<%= form_tag sessions_path do  %>
+	<div class = "field">
+   	<%= label_tag :login %><br>
+	<%= text_field_tag :login%><br/>
+	</div>
+
+	<div class = "field">
+	<%= label_tag :password %><br>
+	<%= text_field_tag :password %><br/>
+	</div>
+	<div class="actions"><%= submit_tag "Log in" %> </div>
+<% end %>
