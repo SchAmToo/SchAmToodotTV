@@ -20,21 +20,11 @@ class StreamsController < ApplicationController
 		@stream.destroy
 	end
 	def show 
-
-#		if Stream.find_by_id(params[:id]).nil?
-#			redirect_to action: :create
-#		else
-		@stream = Stream.find_by_id(params[:id])
-#		end
-		#divid = channel_190
-		doc = Nokogiri::HTML(open(@stream.streamuri))
-		@href = doc.css('div#channel div#channels')
-#		@href = doc.css('#capstone #container #subcontainer #channel div#channels').element_children.text
-		#if Stream.find_by_id(params[:id]).nil? 
-        #	redirect_to action: :index
-      	#else
-        # 	@stream = Stream.find_by_id(params[:id])
-      	#end
+		#check mlg
+		@stream = Stream.find(params[:id])
+		@href = Stream.checkOnline()
+		#check other stream entries
+		#else put up youtube ? 
 	end	
 	def index
 		Stream.all.each do |stream| 

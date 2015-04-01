@@ -16372,3 +16372,4355 @@ Processing by PostsController#show as HTML
   [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
   Rendered posts/show.html.erb within layouts/application (150.2ms)
 Completed 200 OK in 162ms (Views: 82.8ms | ActiveRecord: 76.4ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-01 00:40:50 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5
+Completed 500 Internal Server Error in 32ms
+
+SyntaxError (/Users/SchAmToo/Programmings/SchAmTooDotTV/app/models/stream.rb:6: syntax error, unexpected '{', expecting keyword_then or ';' or '\n'
+/Users/SchAmToo/Programmings/SchAmTooDotTV/app/models/stream.rb:8: syntax error, unexpected '}', expecting keyword_end
+		} else {
+		 ^
+/Users/SchAmToo/Programmings/SchAmTooDotTV/app/models/stream.rb:9: void value expression
+			return false;
+			            ^
+/Users/SchAmToo/Programmings/SchAmTooDotTV/app/models/stream.rb:10: syntax error, unexpected '}', expecting keyword_end):
+  app/controllers/welcome_controller.rb:9:in `frontpage'
+
+
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-01 00:42:15 -0400
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5[0m
+Completed 500 Internal Server Error in 8ms
+
+SyntaxError (/Users/SchAmToo/Programmings/SchAmTooDotTV/app/models/stream.rb:6: syntax error, unexpected '{', expecting keyword_then or ';' or '\n'
+/Users/SchAmToo/Programmings/SchAmTooDotTV/app/models/stream.rb:8: syntax error, unexpected '}', expecting keyword_end
+		} else {
+		 ^
+/Users/SchAmToo/Programmings/SchAmTooDotTV/app/models/stream.rb:9: void value expression):
+  app/controllers/welcome_controller.rb:9:in `frontpage'
+
+
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-01 00:42:48 -0400
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5
+Completed 500 Internal Server Error in 9ms
+
+SyntaxError (/Users/SchAmToo/Programmings/SchAmTooDotTV/app/models/stream.rb:13: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/welcome_controller.rb:9:in `frontpage'
+
+
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-01 00:43:38 -0400
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5[0m
+  [1m[35mStream Load (7.8ms)[0m  SELECT "streams".* FROM "streams" ORDER BY "streams"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered posts/_recentposts.html.erb (14.9ms)
+  Rendered welcome/frontpage.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 1274ms (Views: 1247.0ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 00:43:39 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 00:43:39 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 00:43:39 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 00:43:39 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 00:43:39 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 00:43:40 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 00:43:40 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 00:43:40 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 00:43:40 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 00:43:40 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 00:43:40 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 00:43:40 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 00:43:40 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 00:43:40 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 00:43:40 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 00:43:40 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 00:43:40 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 00:43:40 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 00:43:40 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-01 00:43:40 -0400
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" ORDER BY "streams"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered posts/_recentposts.html.erb (1.1ms)
+  Rendered welcome/frontpage.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 10ms (Views: 6.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 00:43:40 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 00:43:40 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 00:43:40 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 00:43:40 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 00:43:40 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 00:43:40 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 00:43:40 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 00:43:40 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 00:43:40 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 00:43:40 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 00:43:40 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 00:43:40 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 00:43:40 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 00:43:40 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 00:43:40 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 00:43:40 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 00:43:40 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 00:43:40 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 00:43:40 -0400
+
+
+Started GET "/stream/1" for 127.0.0.1 at 2015-04-01 00:44:37 -0400
+
+ActionController::RoutingError (No route matches [GET] "/stream/1"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.1.0) lib/request_store/middleware.rb:8:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.7) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.7) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.3) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.3) lib/rails/commands.rb:76:in `block in <top (required)>'
+  railties (4.0.3) lib/rails/commands.rb:71:in `tap'
+  railties (4.0.3) lib/rails/commands.rb:71:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.3ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.4ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (69.0ms)
+
+
+Started GET "/streams/1" for 127.0.0.1 at 2015-04-01 00:44:43 -0400
+
+SyntaxError (/Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/streams_controller.rb:47: syntax error, unexpected end-of-input, expecting keyword_end
+# and have stream turn on/off during that time for front page...
+                                                                ^):
+  activesupport (4.0.3) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.3) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.3) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.3) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.3) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.3) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.3) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.3) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.3) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.3) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.3) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.3) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.3) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.3) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.3) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.3) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.3) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.3) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.3) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.3) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.3) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.3) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:373:in `_run__2229050891685635288__call__callbacks'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  request_store (1.1.0) lib/request_store/middleware.rb:8:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.7) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.7) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.3) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.3) lib/rails/commands.rb:76:in `block in <top (required)>'
+  railties (4.0.3) lib/rails/commands.rb:71:in `tap'
+  railties (4.0.3) lib/rails/commands.rb:71:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.4ms)
+
+
+Started GET "/streams/1" for 127.0.0.1 at 2015-04-01 00:45:25 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `checkOnline' for #<StreamsController:0x00000107269de8>):
+  app/controllers/streams_controller.rb:24:in `show'
+
+
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.6ms)
+
+
+Started GET "/streams/1" for 127.0.0.1 at 2015-04-01 00:46:48 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `checkOnline' for #<StreamsController:0x000001073323d8>):
+  app/controllers/streams_controller.rb:24:in `show'
+
+
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.0ms)
+
+
+Started GET "/streams/1" for 127.0.0.1 at 2015-04-01 00:47:07 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `checkOnline' for #<Class:0x00000105012218>):
+  app/controllers/streams_controller.rb:24:in `show'
+
+
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.7ms)
+
+
+Started GET "/streams/1" for 127.0.0.1 at 2015-04-01 00:54:01 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `checkOnline' for #<StreamsController:0x00000107399510>):
+  app/controllers/streams_controller.rb:24:in `show'
+
+
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.8ms)
+
+
+Started GET "/streams/1" for 127.0.0.1 at 2015-04-01 00:54:13 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered streams/show.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <h1>Offline/Online</h1>
+    2:  <% if @stream.errors.any? %>
+    3: 	<div id="error_explanation">
+    4: 	<h2><%= pluralize(@stream.errors.count, "error") %> prohibited
+    5: 		this stream from being saved:</h2>
+  app/views/streams/show.html.erb:2:in `_app_views_streams_show_html_erb__139683494494196030_2191085060'
+
+
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.0ms)
+
+
+Started GET "/streams/1" for 127.0.0.1 at 2015-04-01 00:54:37 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStream Load (0.2ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 404 Not Found in 3ms
+
+ActiveRecord::RecordNotFound (Couldn't find Stream with id=1):
+  app/controllers/streams_controller.rb:24:in `show'
+
+
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.3ms)
+
+
+Started GET "/streams/0" for 127.0.0.1 at 2015-04-01 00:54:45 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"0"}
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1  [["id", "0"]]
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Stream with id=0):
+  app/controllers/streams_controller.rb:24:in `show'
+
+
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.3ms)
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 00:54:48 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 14ms (Views: 7.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 00:54:48 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 00:54:48 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 00:54:48 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 00:54:48 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 00:54:48 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 00:54:48 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 00:54:48 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 00:54:48 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 00:54:48 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 00:54:48 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 00:54:48 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 00:54:48 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 00:54:48 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 00:54:48 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 00:54:48 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 00:54:48 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 00:54:48 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 00:54:48 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 00:54:48 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 00:55:10 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:10 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:10 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:10 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:10 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:10 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:10 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:10 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:10 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:10 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:10 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:10 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:10 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:10 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:10 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:10 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:10 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:10 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:10 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:10 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 00:55:18 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 4.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:18 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:18 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:18 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:18 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:18 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:18 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:18 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:18 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:18 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:18 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:18 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:18 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:18 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:18 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:18 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:18 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:18 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:18 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:18 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 00:55:31 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 5.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:31 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:31 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:31 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:31 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:31 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:31 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:31 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:31 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:31 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:31 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:31 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:31 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:31 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:31 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:31 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:31 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:31 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:31 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:31 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 00:55:41 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:41 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:41 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:41 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:41 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:41 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:41 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:41 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:41 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:41 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:41 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:41 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:41 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:41 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:41 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:41 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:41 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:41 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:41 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:41 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 00:55:42 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:42 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:42 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:42 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:42 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:42 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:42 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:42 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:42 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:42 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:42 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:42 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:42 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:42 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:42 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:42 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:42 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:42 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:42 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:42 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 00:55:46 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 4.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:46 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:46 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:46 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:46 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:46 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:46 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:46 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 00:55:46 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:46 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:46 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:46 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:46 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:46 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:46 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:46 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:46 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:46 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:46 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 00:55:46 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:03:34 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1  [["id", "2"]]
+Completed 500 Internal Server Error in 5ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/models/stream.rb:4:in `checkOnline'
+  app/controllers/streams_controller.rb:25:in `show'
+
+
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.1ms)
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:03:44 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 13.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:03:44 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:03:44 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:03:44 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:03:44 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:03:44 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:03:44 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:03:44 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:03:44 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:03:44 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:03:44 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:03:44 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:03:44 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:03:44 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:03:44 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:03:44 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:03:44 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:03:44 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:03:44 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:03:44 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:03:56 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 5.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:03:56 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:03:56 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:03:56 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:03:56 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:03:56 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:03:56 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:03:56 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:03:56 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:03:56 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:03:56 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:03:56 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:03:56 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:03:56 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:03:56 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:03:56 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:03:56 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:03:56 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:03:56 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:03:56 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:03:57 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:03:57 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:03:57 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:03:57 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:03:57 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:03:57 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:03:57 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:03:57 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:03:57 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:03:57 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:03:57 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:03:57 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:03:57 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:03:57 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:03:57 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:03:57 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:03:57 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:03:57 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:03:57 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:03:57 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:04:01 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 12ms (Views: 6.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:04:01 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:04:01 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:04:01 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:04:01 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:04:01 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:04:01 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:04:01 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:04:01 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:01 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:01 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:01 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:01 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:01 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:01 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:01 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:01 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:01 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:01 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:01 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:04:02 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:04:03 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:04:03 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:04:03 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:04:03 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:04:03 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:04:03 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:04:03 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:04:03 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:03 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:03 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:03 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:03 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:03 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:03 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:03 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:03 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:03 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:03 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:03 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:04:49 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 5.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:04:49 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:04:49 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:04:49 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:04:49 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:04:49 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:04:49 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:04:49 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:04:49 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:49 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:49 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:49 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:49 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:49 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:49 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:49 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:49 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:49 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:49 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:49 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:04:53 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 4.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:04:53 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:04:53 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:04:53 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:04:53 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:04:53 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:04:53 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:04:53 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:04:53 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:53 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:53 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:53 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:53 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:53 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:53 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:53 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:53 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:53 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:53 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:04:53 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:05:14 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 5.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:05:14 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:05:14 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:05:14 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:05:14 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:05:14 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:05:14 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:05:14 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:05:14 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:14 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:14 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:14 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:14 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:14 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:14 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:14 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:14 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:14 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:14 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:14 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:05:37 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 5.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:05:37 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:05:37 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:05:37 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:05:37 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:05:37 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:05:37 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:05:37 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:05:37 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:37 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:37 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:37 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:37 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:37 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:37 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:37 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:37 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:37 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:37 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:37 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:05:41 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 5.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:05:41 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:05:41 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:05:41 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:05:41 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:05:41 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:05:41 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:05:41 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:05:41 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:41 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:41 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:41 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:41 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:41 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:41 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:41 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:41 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:41 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:41 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:41 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:05:44 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStream Load (0.2ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 18ms (Views: 5.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:05:44 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:05:44 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:05:44 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:05:44 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:05:44 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:05:44 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:05:44 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:05:44 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:44 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:44 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:44 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:44 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:44 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:44 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:44 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:44 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:44 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:44 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:05:44 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:06:30 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 5.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:30 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:30 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:30 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:30 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:30 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:30 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:30 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:30 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:30 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:30 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:30 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:30 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:30 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:30 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:30 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:30 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:30 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:30 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:30 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:06:43 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 4.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:43 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:43 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:43 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:43 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:43 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:43 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:43 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:43 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:43 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:43 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:43 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:43 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:43 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:43 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:43 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:43 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:43 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:43 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:43 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:06:46 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 5.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:46 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:46 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:46 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:46 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:46 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:46 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:46 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:46 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:46 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:46 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:46 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:46 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:46 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:46 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:46 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:46 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:46 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:46 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:46 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:06:53 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 5.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:53 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:53 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:53 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:53 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:53 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:53 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:53 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:53 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:53 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:53 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:53 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:53 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:53 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:53 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:53 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:53 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:53 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:53 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:53 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:06:58 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 5.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:58 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:58 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:58 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:58 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:58 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:58 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:58 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:06:58 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:58 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:58 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:58 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:58 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:58 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:58 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:58 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:58 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:58 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:58 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:06:58 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:11:35 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 5.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:35 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:35 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:35 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:35 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:35 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:35 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:35 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:35 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:35 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:35 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:35 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:35 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:35 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:35 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:35 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:35 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:35 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:35 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:35 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:11:38 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 5.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:38 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:38 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:38 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:38 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:38 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:38 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:38 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:38 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:38 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:38 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:38 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:38 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:38 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:38 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:38 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:38 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:38 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:38 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:38 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:11:45 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 5.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:45 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:45 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:45 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:45 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:45 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:45 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:45 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:45 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:45 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:45 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:45 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:45 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:45 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:45 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:45 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:45 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:45 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:45 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:45 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:11:51 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 5.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:51 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:51 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:51 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:51 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:51 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:51 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:51 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:51 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:51 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:51 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:51 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:51 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:51 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:51 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:51 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:51 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:51 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:51 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:51 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:11:58 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 5.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:58 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:58 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:58 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:58 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:58 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:58 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:58 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:11:58 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:58 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:58 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:58 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:58 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:58 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:58 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:58 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:58 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:58 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:58 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:11:58 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:12:03 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 5.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:03 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:03 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:03 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:03 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:03 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:03 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:03 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:03 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:03 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:03 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:03 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:03 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:03 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:03 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:03 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:03 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:03 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:03 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:03 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:12:06 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 5.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:06 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:06 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:06 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:06 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:06 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:06 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:06 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:06 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:06 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:06 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:06 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:06 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:06 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:06 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:06 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:06 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:06 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:06 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:06 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:12:12 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 4.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:12 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:12 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:12 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:12 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:12 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:12 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:12 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:12 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:12 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:12 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:12 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:12 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:12 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:12 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:12 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:12 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:12 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:12 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:12 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:12:15 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 5.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:15 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:15 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:15 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:15 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:15 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:15 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:15 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:15 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:15 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:15 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:15 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:15 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:15 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:15 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:15 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:16 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:16 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:16 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:16 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:12:20 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 5.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:20 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:20 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:20 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:20 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:20 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:20 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:20 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:12:20 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:20 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:20 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:20 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:20 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:20 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:20 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:20 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:20 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:20 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:20 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:12:20 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:13:13 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 12ms (Views: 5.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:13:13 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:13:13 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:13:13 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:13:13 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:13:13 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:13:13 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:13:13 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:13:13 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:13:13 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:13:13 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:13:13 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:13:13 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:13:13 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:13:13 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:13:13 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:13:13 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:13:13 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:13:13 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:13:13 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:13:23 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 4.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:13:23 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:13:23 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:13:23 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:13:23 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:13:23 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:13:23 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:13:23 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:13:23 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:13:23 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:13:23 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:13:23 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:13:23 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:13:23 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:13:23 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:13:23 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:13:23 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:13:23 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:13:23 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:13:23 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:17:15 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 5.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:15 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:15 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:15 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:15 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:15 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:15 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:15 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:15 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:15 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:15 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:15 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:15 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:15 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:15 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:15 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:15 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:15 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:15 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:15 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:17:16 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:16 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:16 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:16 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:16 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:16 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:16 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:16 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:16 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:16 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:16 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:16 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:16 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:16 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:16 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:16 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:16 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:16 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:16 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:16 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:17:25 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 5.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:25 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:25 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:25 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:25 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:25 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:25 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:25 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:25 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:25 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:25 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:25 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:25 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:25 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:25 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:25 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:25 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:25 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:25 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:25 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:17:32 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 4.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:32 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:32 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:32 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:32 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:32 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:32 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:32 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:32 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:32 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:32 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:32 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:32 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:32 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:33 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:33 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:33 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:33 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:33 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:33 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:17:39 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 5.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:39 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:39 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:39 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:39 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:39 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:39 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:39 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:39 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:39 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:39 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:39 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:39 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:39 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:39 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:39 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:39 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:39 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:39 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:39 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:17:44 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 4.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:44 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:44 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:44 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:44 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:44 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:44 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:44 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:44 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:44 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:44 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:44 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:44 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:44 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:44 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:44 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:44 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:44 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:44 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:44 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:17:50 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 12.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:50 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:50 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:50 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:50 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:50 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:50 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:50 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:17:50 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:50 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:50 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:50 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:50 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:50 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:50 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:50 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:50 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:50 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:50 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:17:50 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:18:58 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 5.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:18:58 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:18:58 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:18:58 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:18:58 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:18:58 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:18:58 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:18:58 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:18:58 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:18:58 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:18:58 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:18:58 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:18:58 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:18:58 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:18:58 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:18:58 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:18:58 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:18:58 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:18:58 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:18:58 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:19:03 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 5.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:03 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:03 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:03 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:03 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:03 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:03 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:03 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:03 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:03 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:03 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:03 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:03 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:03 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:03 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:03 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:03 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:03 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:03 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:03 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:19:10 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 4.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:10 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:10 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:10 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:10 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:10 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:10 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:10 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:10 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:10 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:10 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:10 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:10 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:10 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:10 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:10 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:10 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:10 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:10 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:10 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:19:12 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 12.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:12 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:12 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:12 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:12 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:12 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:12 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:12 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:12 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:12 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:12 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:12 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:12 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:12 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:12 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:12 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:12 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:12 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:12 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:12 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:19:17 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 6.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:17 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:17 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:17 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:17 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:17 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:17 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:17 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:17 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:17 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:17 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:17 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:17 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:17 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:17 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:17 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:17 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:17 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:17 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:17 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:19:32 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 5.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:33 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:33 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:33 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:33 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:33 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:33 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:33 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:33 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:33 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:33 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:33 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:33 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:33 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:33 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:33 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:33 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:33 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:33 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:33 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:19:35 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 5.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:35 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:35 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:35 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:35 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:35 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:35 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:35 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:35 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:35 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:35 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:35 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:35 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:35 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:35 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:35 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:35 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:35 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:35 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:35 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:19:40 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 5.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:40 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:40 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:40 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:40 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:40 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:40 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:40 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:40 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:40 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:40 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:40 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:40 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:40 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:40 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:40 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:40 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:40 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:40 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:40 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:19:42 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 16ms (Views: 8.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:42 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:43 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:43 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:43 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:43 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:43 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:43 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:19:43 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:43 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:43 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:43 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:43 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:43 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:43 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:43 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:43 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:43 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:43 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:19:43 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:22:17 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1[0m  [["id", "2"]]
+Completed 500 Internal Server Error in 8ms
+
+NoMethodError (undefined method `strip' for #<Nokogiri::HTML::Document:0x00000101820648>):
+  app/models/stream.rb:7:in `checkOnline'
+  app/controllers/streams_controller.rb:25:in `show'
+
+
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.5ms)
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:22:23 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 5.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:22:23 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:22:23 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:22:23 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:22:23 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:22:23 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:22:23 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:22:23 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:22:23 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:22:23 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:22:23 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:22:23 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:22:23 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:22:23 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:22:23 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:22:23 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:22:23 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:22:23 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:22:23 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:22:23 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:24:55 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 4.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:24:55 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:24:55 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:24:55 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:24:55 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:24:55 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:24:55 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:24:55 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:24:55 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:24:55 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:24:55 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:24:55 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:24:55 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:24:55 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:24:55 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:24:55 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:24:55 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:24:55 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:24:56 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:24:56 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:24:59 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 4.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:24:59 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:24:59 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:24:59 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:24:59 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:24:59 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:24:59 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:24:59 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:24:59 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:24:59 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:24:59 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:24:59 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:24:59 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:24:59 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:24:59 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:24:59 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:24:59 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:24:59 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:24:59 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:24:59 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:28:34 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:28:34 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:28:34 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:28:34 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:28:34 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:28:34 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:28:34 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:28:34 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:28:34 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:28:34 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:28:34 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:28:34 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:28:34 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:28:34 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:28:34 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:28:34 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:28:34 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:28:34 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:28:34 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:28:34 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:31:47 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStream Load (0.2ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1  [["id", "2"]]
+Completed 500 Internal Server Error in 19ms
+
+NoMethodError (undefined method `text_includes' for #<Nokogiri::HTML::Document:0x00000102b2d2b8>):
+  app/models/stream.rb:8:in `checkOnline'
+  app/controllers/streams_controller.rb:25:in `show'
+
+
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.7ms)
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:33:20 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1[0m  [["id", "2"]]
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `text_includes' for #<Nokogiri::HTML::Document:0x000001071a2680>):
+  app/models/stream.rb:8:in `checkOnline'
+  app/controllers/streams_controller.rb:25:in `show'
+
+
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.4ms)
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:33:33 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStream Load (0.2ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 16ms (Views: 6.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:33:33 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:33:33 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:33:33 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:33:33 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:33:33 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:33:33 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:33:33 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:33:33 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:33 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:33 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:33 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:33 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:33 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:33 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:33 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:33 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:33 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:33 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:33 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:33:40 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 14ms (Views: 9.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:33:40 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:33:40 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:33:40 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:33:40 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:33:40 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:33:40 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:33:40 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:33:40 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:40 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:40 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:40 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:40 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:40 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:40 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:40 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:40 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:40 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:40 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:40 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:33:45 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 12ms (Views: 5.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:33:45 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:33:45 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:33:45 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:33:45 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:33:45 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:33:45 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:33:45 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:33:45 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:45 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:45 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:45 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:45 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:45 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:45 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:45 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:45 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:45 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:45 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:45 -0400
+
+
+Started GET "/streams/2" for 127.0.0.1 at 2015-04-01 01:33:50 -0400
+Processing by StreamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered streams/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 14ms (Views: 9.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-01 01:33:50 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-04-01 01:33:50 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-04-01 01:33:50 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-04-01 01:33:50 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-04-01 01:33:50 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-04-01 01:33:50 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-04-01 01:33:50 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-04-01 01:33:50 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:50 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:50 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:50 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:50 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:50 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:50 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:50 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:50 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:50 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:50 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-01 01:33:50 -0400
