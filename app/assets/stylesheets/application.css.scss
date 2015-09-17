@@ -11,3 +11,15 @@
  *= require_self
  *= require_tree .
  */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+$font-stack : DIN, sans-serif;
+$primary-color : #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  background-color: #efefef;
+}

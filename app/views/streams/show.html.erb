@@ -1,16 +1,2 @@
-<h1>Offline/Online</h1>
- <% if @stream.errors.any? %>
-	<div id="error_explanation">
-	<h2><%= pluralize(@stream.errors.count, "error") %> prohibited
-		this stream from being saved:</h2>
-	<u1>
-	<% @stream.errors.full_messages.each do |msg| %>
-		<li><%= msg %></li>
-	<% end %>
-	</u1>
-	</div>
-	<% end %>
 
-<!-- 	<p> <iframe width="560" height="315" src= frameborder="0" allowfullscreen></iframe> </p>
- -->
- <%= @href %>
+<iframe width="560" height="315" src=<%= @stream %> frameborder="0" allowfullscreen></iframe>

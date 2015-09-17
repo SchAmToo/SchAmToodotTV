@@ -6,11 +6,10 @@ class WelcomeController < ApplicationController
 
   	def frontpage
   		@posts = Post.find(:all, :order => "id desc", :limit => 5)
-  		@stream = Stream.last
   	end
 
   	def show
   	  	@posts = Post.find(:all, :order => "id desc", :limit => 5)
-  		@stream = Stream.last
+  		@stream = Stream.checkOnline(Stream.last)
   	end
 end

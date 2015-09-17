@@ -1,0 +1,18 @@
+
+<ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#MLGtv">MLGtv</a></li>
+  <li><a data-toggle="tab" href="#Twitch">Twitch <%= '<i class = "glyphicon glyphicon-star "</i>' if checkOnline("mlg.tv") %></a></li>
+  <li><a data-toggle="tab" href="#Youtube">YouTube</a></li>
+</ul> 
+
+<div class="tab-content">
+  <div id="MLGtv" class="tab-pane fade in active">
+    <%= render 'streams/showembed', :stream_link => Stream.find_by_source("tv.majorleaguegaming.com").streamuri %>
+  </div>
+  <div id="Twitch" class="tab-pane fade">
+    <%= render 'streams/showembed', :stream_link => Stream.find_by_source("twitch.tv").streamuri %>
+  </div>
+  <div id="Youtube" class="tab-pane fade">
+      <%= render 'streams/showembed', :stream_link => Stream.find_by_source("youtube.com").streamuri %>
+  </div>
+</div>

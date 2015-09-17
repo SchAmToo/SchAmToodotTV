@@ -1,3 +1,23 @@
-// Place all the styles related to the welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #ffffff;
+.header-container{
+	width: 100%;
+	position: fixed;
+	top: 0px;
+}
+.header{
+	height: 30px;
+	background: #888888;
+	border: 1px solid #000000;
+	width: 75%;
+	margin: 0px auto;
+	font-size: 30px;
+}
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  background-color: #003664;
+}
+

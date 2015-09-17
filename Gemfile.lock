@@ -31,6 +31,11 @@ GEM
       activesupport (>= 3.2)
       request_store (~> 1.0)
       scrypt (~> 1.2)
+    autoprefixer-rails (6.0.2)
+      execjs
+      json
+    bootstrap-sass (3.2.0.2)
+      sass (~> 3.2)
     builder (3.1.4)
     cancan (1.6.10)
     coffee-rails (4.0.1)
@@ -132,6 +137,8 @@ PLATFORMS
 
 DEPENDENCIES
   authlogic
+  autoprefixer-rails
+  bootstrap-sass (~> 3.2.0)
   cancan
   coffee-rails (~> 4.0.0)
   jbuilder (~> 1.2)

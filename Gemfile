@@ -52,5 +52,6 @@ gem 'cancan'
 gem 'nokogiri' #needed for online/offline webpage check
 
 gem 'thin' #replace webrick
-
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
 gem 'authlogic'
