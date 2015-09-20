@@ -35,6 +35,10 @@ class StreamsController < ApplicationController
 		@mlg_stream = Stream.find_by_source("mlg.tv").streamuri
 		@youtube_video = Stream.find_by_source("youtube.com").streamuri
 	end
+	def tab_of_streams
+		respond_to do |format|
+			application.js
+		end
 end
 
 #allow me to define stream (current casting place) (POST UPDATE)

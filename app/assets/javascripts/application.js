@@ -15,3 +15,24 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
+
+$(function() {
+	$("#twitch-tab").click(function(){
+		$("#video-player").html("<div class='video-player'><iframe  src='http://twitch.tv/schamtoo/embed' frameborder='0' allowfullscreen></iframe></div>")
+		$document.getElementById(/([A-z])\w+-/+"tab").className="";
+		$document.getElementById("twitch-tab").className="Active";
+		return false;
+	});
+	$("#mlg-tab").click(function(){
+		$("#video-player").html("<div class='video-player'><iframe src='http://tv.majorleaguegaming.com/player/embed/schamtoo' frameborder='0' allowfullscreen></iframe></div>")
+		$document.getElementById(/([A-z])\w+-/+"tab").className="";
+		$document.getElementById("mlg-tab").className="Active";
+		return false;
+	});
+	$("#youtube-tab").click(function(){
+		$("#video-player").html("<div class='video-player'><iframe src='https://www.youtube.com/embed/iuQY9HHZQpA?list=PLYWkkXRQ3uYUsKKFfY37lEbwoY8wilSYt' frameborder='0' allowfullscreen></iframe></div>")
+		$document.getElementById(/([A-z])\w+-/+"tab").className="";
+		$document.getElementById("mlg-tab").className="Active";
+		return false;
+	});
+});

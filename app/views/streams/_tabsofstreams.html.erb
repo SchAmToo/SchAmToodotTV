@@ -1,18 +1,14 @@
 
-<ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" href="#MLGtv">MLGtv</a></li>
-  <li><a data-toggle="tab" href="#Twitch">Twitch <%= '<i class = "glyphicon glyphicon-star "</i>' if checkOnline("mlg.tv") %></a></li>
-  <li><a data-toggle="tab" href="#Youtube">YouTube</a></li>
-</ul> 
-
-<div class="tab-content">
-  <div id="MLGtv" class="tab-pane fade in active">
-    <%= render 'streams/showembed', :stream_link => Stream.find_by_source("tv.majorleaguegaming.com").streamuri %>
-  </div>
-  <div id="Twitch" class="tab-pane fade">
-    <%= render 'streams/showembed', :stream_link => Stream.find_by_source("twitch.tv").streamuri %>
-  </div>
-  <div id="Youtube" class="tab-pane fade">
-      <%= render 'streams/showembed', :stream_link => Stream.find_by_source("youtube.com").streamuri %>
+<div id="tabs" class="video-tabs">
+  <ul id ="video-choices" class="nav nav-tabs" >
+    <li id="mlg-tab" class="active"><a data-toggle="tab" href="#MLGtv">MLGtv <%= checkOnline("mlg.tv") %> </a></li>
+    <li id="twitch-tab"><a data-toggle="tab" href="#Twitch">Twitch <%= checkOnline("twitch.tv") %> </a></li>
+    <li id="youtube-tab"><a data-toggle="tab" href="#Youtube">YouTube <%= checkOnline("youtube.com") %> </a></li>
+  </ul> 
+</div>
+<div class="video-player-container">
+  <div id="video-player" class="tab-pane fade in">
+    <div class="video-player"><iframe width="560" height="315" src="http://tv.majorleaguegaming.com/player/embed/schamtoo" frameborder="0" allowfullscreen></iframe></div>
   </div>
 </div>
+<!-- < %= render 'streams/showembed', :stream_link => Stream.find_by_source("tv.majorleaguegaming.com").streamuri %> -->
