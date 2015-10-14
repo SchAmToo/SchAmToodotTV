@@ -1,3 +1,26 @@
+<script>
+  $(function() {
+  $("#twitch-tab").click(function(){
+    $("#video-player").innerhtml("<%= escape_javascript(render 'streams/showembed', :stream_link => Stream.find_by_source('twitch.tv').streamuri) %>");
+    $document.getElementById(/([A-z])\w+-/+"tab").className="";
+    $document.getElementById("twitch-tab").className="Active";
+    return false;
+  });
+  $("#mlg-tab").click(function(){
+    $("#video-player").html("<p1>ROFL</p1>");
+    $document.getElementById(/([A-z])\w+-/+"tab").className="";
+    $document.getElementById("mlg-tab").className="Active";
+    return false;
+  });
+  $("#youtube-tab").click(function(){
+    $("#video-player").html("<%= render 'streams/showembed', :stream_link => Stream.find_by_source('youtube.com').streamuri %>"); 
+    $document.getElementById(/([A-z])\w+-/+"tab").className="";
+    $document.getElementById("mlg-tab").className="Active";
+    return false;
+  });
+});
+</script>
+
 
 <div id="tabs" class="video-tabs">
   <ul id ="video-choices" class="nav nav-tabs" >
@@ -11,4 +34,4 @@
     <div class="video-player"><iframe width="560" height="315" src="http://tv.majorleaguegaming.com/player/embed/schamtoo" frameborder="0" allowfullscreen></iframe></div>
   </div>
 </div>
-<!-- < %= render 'streams/showembed', :stream_link => Stream.find_by_source("tv.majorleaguegaming.com").streamuri %> -->
+<!--  -->

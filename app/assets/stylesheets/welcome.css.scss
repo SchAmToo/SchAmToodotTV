@@ -3,16 +3,25 @@
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #ffffff;
 .header-container{
+	font-size: 100%;
+	font-style: bold;
+	font-family: $font-stack;
 	width: 100%;
-	position: fixed;
-	top: 0px;
+	position: relative;
+	bottom: 0px;
+	color: #003664;
+	font-size: 50px;
+	font-weight: bold;
+	position: relative;
 }
 .header{
+	top: 0px;
 	height: 50px;
-	background: #888888;
+	color: #003664;
+	background: #FFFFFF;
 	width: 100%;
 	margin: 0px auto;
-	font-size: 30px;
+	position: absolute;
 }
 body {
   font: 100% $font-stack;

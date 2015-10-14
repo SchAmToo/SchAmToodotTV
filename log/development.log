@@ -58864,3 +58864,2521 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-20 13:08:00
 
 
 Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2015-09-20 13:08:00 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-27 23:38:40 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5
+  [1m[36mStream Load (0.5ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'mlg.tv' LIMIT 1[0m
+  [1m[35mStream Load (0.2ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1
+  [1m[36mStream Load (0.2ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1[0m
+  Rendered streams/_tabsofstreams.html.erb (983.0ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered posts/_recentposts.html.erb (11.6ms)
+  Rendered welcome/frontpage.html.erb within layouts/application (1000.1ms)
+Completed 200 OK in 2560ms (Views: 2531.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-27 23:38:42 -0400
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5[0m
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'mlg.tv' LIMIT 1
+  [1m[36mStream Load (0.2ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1[0m
+  [1m[35mStream Load (0.2ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1
+  Rendered streams/_tabsofstreams.html.erb (430.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered posts/_recentposts.html.erb (1.5ms)
+  Rendered welcome/frontpage.html.erb within layouts/application (433.1ms)
+Completed 200 OK in 445ms (Views: 442.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-27 23:38:43 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-09-27 23:38:43 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-09-27 23:38:43 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-09-27 23:38:43 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-09-27 23:38:43 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-27 23:38:43 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-09-27 23:38:43 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-09-27 23:38:43 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-09-27 23:38:43 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-09-27 23:38:43 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-27 23:38:43 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-09-27 23:38:43 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-27 23:38:43 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-09-27 23:38:43 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-09-27 23:38:43 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-09-27 23:38:43 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-09-27 23:38:43 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-09-27 23:38:43 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-09-27 23:38:43 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-09-27 23:38:43 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-09-27 23:38:43 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-09-27 23:38:43 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-09-27 23:38:43 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-09-27 23:38:43 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-09-27 23:38:43 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-09-27 23:38:43 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-09-27 23:38:43 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-09-27 23:38:43 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-09-27 23:38:43 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-27 23:38:43 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-09-27 23:38:43 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-27 23:38:43 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2015-09-27 23:38:43 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-27 23:41:54 -0400
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1[0m
+  Rendered streams/_showembed.html.erb (6.6ms)
+  [1m[35mStream Load (0.2ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'tv.majorleaguegaming.com' LIMIT 1
+  Rendered streams/_showembed.html.erb (0.0ms)
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1[0m
+  Rendered streams/_showembed.html.erb (0.0ms)
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'mlg.tv' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1
+  Rendered streams/_tabsofstreams.html.erb (972.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered posts/_recentposts.html.erb (1.5ms)
+  Rendered welcome/frontpage.html.erb within layouts/application (975.0ms)
+Completed 200 OK in 987ms (Views: 985.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-27 23:41:55 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-09-27 23:41:55 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-09-27 23:41:55 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-09-27 23:41:55 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-09-27 23:41:55 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-09-27 23:41:55 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-09-27 23:41:55 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-09-27 23:41:55 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-27 23:41:55 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-27 23:41:55 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-27 23:41:55 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-09-27 23:41:55 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-09-27 23:41:55 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-09-27 23:41:55 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-09-27 23:41:55 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-09-27 23:41:55 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-09-27 23:41:55 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-09-27 23:41:55 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-09-27 23:41:55 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-09-27 23:41:55 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-09-27 23:41:55 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-09-27 23:41:55 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-09-27 23:41:55 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-09-27 23:41:55 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-09-27 23:41:55 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-09-27 23:41:55 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-09-27 23:41:55 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-09-27 23:41:55 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-09-27 23:41:55 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-27 23:41:55 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-09-27 23:41:55 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-27 23:41:55 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2015-09-27 23:41:55 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-27 23:42:06 -0400
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5
+  [1m[36mStream Load (0.3ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1[0m
+  Rendered streams/_showembed.html.erb (0.1ms)
+  [1m[35mStream Load (0.2ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'tv.majorleaguegaming.com' LIMIT 1
+  Rendered streams/_showembed.html.erb (0.1ms)
+  [1m[36mStream Load (0.2ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1[0m
+  Rendered streams/_showembed.html.erb (0.1ms)
+  [1m[35mStream Load (0.3ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'mlg.tv' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1
+  Rendered streams/_tabsofstreams.html.erb (480.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered posts/_recentposts.html.erb (2.0ms)
+  Rendered welcome/frontpage.html.erb within layouts/application (484.8ms)
+Completed 200 OK in 501ms (Views: 497.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-27 23:42:07 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-09-27 23:42:07 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-09-27 23:42:07 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-09-27 23:42:07 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-09-27 23:42:07 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-09-27 23:42:07 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-09-27 23:42:07 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-09-27 23:42:07 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-27 23:42:07 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-27 23:42:07 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-27 23:42:07 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-09-27 23:42:07 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-09-27 23:42:07 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-09-27 23:42:07 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-09-27 23:42:07 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-09-27 23:42:07 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-09-27 23:42:07 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-09-27 23:42:07 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-09-27 23:42:07 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-09-27 23:42:07 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-09-27 23:42:07 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-09-27 23:42:07 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-09-27 23:42:07 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-09-27 23:42:07 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-09-27 23:42:07 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-09-27 23:42:07 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-09-27 23:42:07 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-09-27 23:42:07 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-09-27 23:42:07 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-27 23:42:07 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-09-27 23:42:07 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-27 23:42:07 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2015-09-27 23:42:07 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-27 23:46:46 -0400
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1[0m
+  Rendered streams/_showembed.html.erb (0.1ms)
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'tv.majorleaguegaming.com' LIMIT 1
+  Rendered streams/_showembed.html.erb (0.0ms)
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1[0m
+  Rendered streams/_showembed.html.erb (0.0ms)
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'mlg.tv' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1
+  Rendered streams/_tabsofstreams.html.erb (1323.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered posts/_recentposts.html.erb (1.4ms)
+  Rendered welcome/frontpage.html.erb within layouts/application (1326.6ms)
+Completed 200 OK in 1342ms (Views: 1339.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-27 23:46:47 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-09-27 23:46:47 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-09-27 23:46:47 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-09-27 23:46:47 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-09-27 23:46:47 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-09-27 23:46:47 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-09-27 23:46:47 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-09-27 23:46:47 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-27 23:46:47 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-27 23:46:47 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-27 23:46:47 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-09-27 23:46:47 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-09-27 23:46:47 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-09-27 23:46:47 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-09-27 23:46:47 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-09-27 23:46:47 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-09-27 23:46:47 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-09-27 23:46:47 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-09-27 23:46:47 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-09-27 23:46:47 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-09-27 23:46:47 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-09-27 23:46:47 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-09-27 23:46:47 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-09-27 23:46:47 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-09-27 23:46:47 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-09-27 23:46:47 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-09-27 23:46:47 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-09-27 23:46:47 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-09-27 23:46:47 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-27 23:46:47 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-09-27 23:46:47 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-27 23:46:47 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2015-09-27 23:46:47 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-28 00:06:58 -0400
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1[0m
+  Rendered streams/_showembed.html.erb (0.1ms)
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'tv.majorleaguegaming.com' LIMIT 1
+  Rendered streams/_showembed.html.erb (0.0ms)
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1[0m
+  Rendered streams/_showembed.html.erb (0.1ms)
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'mlg.tv' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1
+  Rendered streams/_tabsofstreams.html.erb (663.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered posts/_recentposts.html.erb (1.6ms)
+  Rendered welcome/frontpage.html.erb within layouts/application (674.4ms)
+Completed 200 OK in 695ms (Views: 692.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-28 00:06:59 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-09-28 00:06:59 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-09-28 00:06:59 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-09-28 00:06:59 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-09-28 00:06:59 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-09-28 00:06:59 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-09-28 00:06:59 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-09-28 00:06:59 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-28 00:06:59 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-28 00:06:59 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-28 00:06:59 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-09-28 00:06:59 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-09-28 00:06:59 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-09-28 00:06:59 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-09-28 00:06:59 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-09-28 00:06:59 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-09-28 00:06:59 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-09-28 00:06:59 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-09-28 00:06:59 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-09-28 00:06:59 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-09-28 00:06:59 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-09-28 00:06:59 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-09-28 00:06:59 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-09-28 00:06:59 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-09-28 00:06:59 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-09-28 00:06:59 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-09-28 00:06:59 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-09-28 00:06:59 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-09-28 00:06:59 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-28 00:06:59 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-09-28 00:06:59 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-28 00:06:59 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2015-09-28 00:06:59 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-28 00:07:37 -0400
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1[0m
+  Rendered streams/_showembed.html.erb (0.0ms)
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'tv.majorleaguegaming.com' LIMIT 1
+  Rendered streams/_showembed.html.erb (0.0ms)
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1[0m
+  Rendered streams/_showembed.html.erb (0.0ms)
+  [1m[35mStream Load (0.2ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'mlg.tv' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1
+  Rendered streams/_tabsofstreams.html.erb (899.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered posts/_recentposts.html.erb (1.2ms)
+  Rendered welcome/frontpage.html.erb within layouts/application (902.6ms)
+Completed 200 OK in 913ms (Views: 911.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-28 00:07:38 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-09-28 00:07:38 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-09-28 00:07:38 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-09-28 00:07:38 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-09-28 00:07:38 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-09-28 00:07:38 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-09-28 00:07:38 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-09-28 00:07:38 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-28 00:07:38 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-28 00:07:38 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-28 00:07:38 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-09-28 00:07:38 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-09-28 00:07:38 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-09-28 00:07:38 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-09-28 00:07:38 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-09-28 00:07:38 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-09-28 00:07:38 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-09-28 00:07:38 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-09-28 00:07:38 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-09-28 00:07:38 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-09-28 00:07:38 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-09-28 00:07:38 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-09-28 00:07:38 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-09-28 00:07:38 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-09-28 00:07:38 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-09-28 00:07:38 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-09-28 00:07:38 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-09-28 00:07:38 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-09-28 00:07:38 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-28 00:07:38 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-09-28 00:07:38 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-28 00:07:38 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2015-09-28 00:07:38 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-28 00:11:28 -0400
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1[0m
+  Rendered streams/_showembed.html.erb (0.0ms)
+  [1m[35mStream Load (0.2ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'tv.majorleaguegaming.com' LIMIT 1
+  Rendered streams/_showembed.html.erb (0.0ms)
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1[0m
+  Rendered streams/_showembed.html.erb (0.0ms)
+  [1m[35mStream Load (0.2ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'mlg.tv' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1
+  Rendered streams/_tabsofstreams.html.erb (936.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered posts/_recentposts.html.erb (1.4ms)
+  Rendered welcome/frontpage.html.erb within layouts/application (939.6ms)
+Completed 200 OK in 954ms (Views: 951.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-28 00:11:29 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-09-28 00:11:29 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-09-28 00:11:29 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-09-28 00:11:29 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-09-28 00:11:29 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-09-28 00:11:29 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-09-28 00:11:29 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-09-28 00:11:29 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:29 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:29 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:29 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:29 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:29 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:29 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:29 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:29 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:29 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:29 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:29 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:29 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:29 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:29 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:29 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:29 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:29 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:29 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:29 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:29 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:29 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:29 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:29 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:29 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2015-09-28 00:11:29 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-28 00:11:57 -0400
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5
+  [1m[36mStream Load (0.6ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1[0m
+  Rendered streams/_showembed.html.erb (0.2ms)
+  [1m[35mStream Load (0.2ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1
+  Rendered streams/_showembed.html.erb (0.1ms)
+  [1m[36mStream Load (0.2ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'mlg.tv' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1[0m
+  Rendered streams/_tabsofstreams.html.erb (886.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered posts/_recentposts.html.erb (1.4ms)
+  Rendered welcome/frontpage.html.erb within layouts/application (890.0ms)
+Completed 200 OK in 904ms (Views: 900.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-28 00:11:59 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-09-28 00:11:59 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-09-28 00:11:59 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-09-28 00:11:59 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-09-28 00:11:59 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-09-28 00:11:59 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-09-28 00:11:59 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-09-28 00:11:59 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:59 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:59 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:59 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:59 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:59 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:59 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:59 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:59 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:59 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:59 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:59 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:59 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:59 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:59 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:59 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:59 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:59 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:59 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:59 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:59 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:59 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:59 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:59 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-28 00:11:59 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2015-09-28 00:11:59 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-28 00:14:53 -0400
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5[0m
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1
+  Rendered streams/_showembed.html.erb (0.1ms)
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1[0m
+  Rendered streams/_showembed.html.erb (0.0ms)
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'mlg.tv' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1
+  Rendered streams/_tabsofstreams.html.erb (1327.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered posts/_recentposts.html.erb (1.4ms)
+  Rendered welcome/frontpage.html.erb within layouts/application (1330.3ms)
+Completed 200 OK in 1344ms (Views: 1340.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-28 00:14:55 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-09-28 00:14:55 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-09-28 00:14:55 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-09-28 00:14:55 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-09-28 00:14:55 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-09-28 00:14:55 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-09-28 00:14:55 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-09-28 00:14:55 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-28 00:14:55 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-28 00:14:55 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-28 00:14:55 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-09-28 00:14:55 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-09-28 00:14:55 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-09-28 00:14:55 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-09-28 00:14:55 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-09-28 00:14:55 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-09-28 00:14:55 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-09-28 00:14:55 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-09-28 00:14:55 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-09-28 00:14:55 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-09-28 00:14:55 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-09-28 00:14:55 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-09-28 00:14:55 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-09-28 00:14:55 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-09-28 00:14:55 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-09-28 00:14:55 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-09-28 00:14:55 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-09-28 00:14:55 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-09-28 00:14:55 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-28 00:14:55 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-09-28 00:14:55 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-28 00:14:55 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2015-09-28 00:14:55 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-28 00:20:30 -0400
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1[0m
+  Rendered streams/_showembed.html.erb (0.0ms)
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1
+  Rendered streams/_showembed.html.erb (0.0ms)
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'mlg.tv' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1[0m
+  Rendered streams/_tabsofstreams.html.erb (910.6ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered posts/_recentposts.html.erb (1.1ms)
+  Rendered welcome/frontpage.html.erb within layouts/application (912.9ms)
+Completed 200 OK in 923ms (Views: 921.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-28 00:20:31 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-09-28 00:20:31 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-09-28 00:20:31 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-09-28 00:20:31 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-09-28 00:20:31 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-09-28 00:20:31 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-09-28 00:20:31 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-09-28 00:20:31 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-28 00:20:31 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-28 00:20:31 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-28 00:20:31 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-09-28 00:20:31 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-09-28 00:20:31 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-09-28 00:20:31 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-09-28 00:20:31 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-09-28 00:20:31 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-09-28 00:20:31 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-09-28 00:20:31 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-09-28 00:20:31 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-09-28 00:20:31 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-09-28 00:20:31 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-09-28 00:20:31 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-09-28 00:20:31 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-09-28 00:20:31 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-09-28 00:20:31 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-09-28 00:20:31 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-09-28 00:20:31 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-09-28 00:20:31 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-09-28 00:20:31 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-28 00:20:31 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-09-28 00:20:31 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-28 00:20:31 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2015-09-28 00:20:31 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-28 00:33:03 -0400
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5[0m
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1
+  Rendered streams/_showembed.html.erb (0.0ms)
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1[0m
+  Rendered streams/_showembed.html.erb (0.0ms)
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'mlg.tv' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1
+  Rendered streams/_tabsofstreams.html.erb (515.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered posts/_recentposts.html.erb (1.4ms)
+  Rendered welcome/frontpage.html.erb within layouts/application (518.5ms)
+Completed 200 OK in 530ms (Views: 528.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-28 00:33:04 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-09-28 00:33:04 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-09-28 00:33:04 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-09-28 00:33:04 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-09-28 00:33:04 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-09-28 00:33:04 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-09-28 00:33:04 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-09-28 00:33:04 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:04 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:04 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:04 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:04 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:04 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:04 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:04 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:04 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:04 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:04 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:04 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:04 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:04 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:04 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:04 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:04 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:04 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:04 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:04 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:04 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:04 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:04 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:04 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:04 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2015-09-28 00:33:04 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-09-28 00:33:11 -0400
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5
+  [1m[36mStream Load (0.3ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1[0m
+  Rendered streams/_showembed.html.erb (0.1ms)
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1
+  Rendered streams/_showembed.html.erb (0.1ms)
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'mlg.tv' LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1[0m
+  Rendered streams/_tabsofstreams.html.erb (477.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered posts/_recentposts.html.erb (1.7ms)
+  Rendered welcome/frontpage.html.erb within layouts/application (480.6ms)
+Completed 200 OK in 497ms (Views: 493.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-09-28 00:33:12 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-09-28 00:33:12 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-09-28 00:33:12 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-09-28 00:33:12 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-09-28 00:33:12 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-09-28 00:33:12 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-09-28 00:33:12 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-09-28 00:33:12 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:12 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:12 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:12 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:12 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:12 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:12 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:12 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:12 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:12 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:12 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:12 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:12 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:12 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:12 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:12 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:12 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:12 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:12 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:12 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:12 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:12 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:12 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:12 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-09-28 00:33:12 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2015-09-28 00:33:12 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 19:07:31 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5
+  [1m[36mStream Load (0.7ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1[0m
+  Rendered streams/_showembed.html.erb (0.6ms)
+  [1m[35mStream Load (0.2ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1
+  Rendered streams/_showembed.html.erb (0.2ms)
+  [1m[36mStream Load (0.3ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'mlg.tv' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1[0m
+  Rendered streams/_tabsofstreams.html.erb (672.0ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered posts/_recentposts.html.erb (11.0ms)
+  Rendered welcome/frontpage.html.erb within layouts/application (690.4ms)
+Completed 200 OK in 2503ms (Views: 2467.1ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 19:07:34 -0400
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5[0m
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1
+  Rendered streams/_showembed.html.erb (0.0ms)
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1[0m
+  Rendered streams/_showembed.html.erb (0.0ms)
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'mlg.tv' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1
+  Rendered streams/_tabsofstreams.html.erb (356.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered posts/_recentposts.html.erb (1.5ms)
+  Rendered welcome/frontpage.html.erb within layouts/application (359.3ms)
+Completed 200 OK in 372ms (Views: 369.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-11 19:07:34 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-10-11 19:07:34 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-10-11 19:07:34 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-10-11 19:07:34 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-10-11 19:07:34 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-10-11 19:07:34 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-11 19:07:34 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-10-11 19:07:34 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:34 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:34 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:34 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:34 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:34 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:34 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:34 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:34 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:34 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:34 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:34 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:34 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:34 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:34 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:34 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:34 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:34 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:34 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:34 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:34 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:34 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:34 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:34 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:34 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2015-10-11 19:07:34 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 19:07:53 -0400
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1[0m
+  Rendered streams/_showembed.html.erb (0.1ms)
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1
+  Rendered streams/_showembed.html.erb (0.0ms)
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'mlg.tv' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1[0m
+  Rendered streams/_tabsofstreams.html.erb (842.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered posts/_recentposts.html.erb (1.1ms)
+  Rendered welcome/frontpage.html.erb within layouts/application (844.8ms)
+Completed 200 OK in 2869ms (Views: 2865.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-11 19:07:56 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-10-11 19:07:56 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-10-11 19:07:56 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-10-11 19:07:56 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-10-11 19:07:56 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-10-11 19:07:56 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-11 19:07:56 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-10-11 19:07:56 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:56 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:56 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:56 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:56 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:56 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:56 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:56 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:56 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:56 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:56 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:56 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:56 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:56 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:56 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:56 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:56 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:56 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:56 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:56 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:56 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:56 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:56 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:56 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-11 19:07:56 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2015-10-11 19:07:56 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 19:10:07 -0400
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5[0m
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1
+  Rendered streams/_showembed.html.erb (0.0ms)
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1[0m
+  Rendered streams/_showembed.html.erb (0.0ms)
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'mlg.tv' LIMIT 1
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1
+  Rendered streams/_tabsofstreams.html.erb (1514.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered posts/_recentposts.html.erb (1.4ms)
+  Rendered welcome/frontpage.html.erb within layouts/application (1517.4ms)
+Completed 200 OK in 2733ms (Views: 2730.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 19:10:10 -0400
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1[0m
+  Rendered streams/_showembed.html.erb (0.1ms)
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1
+  Rendered streams/_showembed.html.erb (0.0ms)
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'mlg.tv' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1[0m
+  Rendered streams/_tabsofstreams.html.erb (439.6ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered posts/_recentposts.html.erb (1.6ms)
+  Rendered welcome/frontpage.html.erb within layouts/application (442.6ms)
+Completed 200 OK in 455ms (Views: 452.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-11 19:10:11 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-10-11 19:10:11 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-10-11 19:10:11 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-10-11 19:10:11 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-10-11 19:10:11 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-10-11 19:10:11 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-11 19:10:11 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-10-11 19:10:11 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-11 19:10:11 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-11 19:10:11 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-10-11 19:10:11 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-11 19:10:11 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-11 19:10:11 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-11 19:10:11 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-11 19:10:11 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-11 19:10:11 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-11 19:10:11 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-11 19:10:11 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-11 19:10:11 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-11 19:10:11 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-11 19:10:11 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-11 19:10:11 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-11 19:10:11 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-10-11 19:10:11 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-10-11 19:10:11 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-10-11 19:10:11 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-10-11 19:10:11 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-10-11 19:10:11 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-10-11 19:10:11 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-10-11 19:10:11 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-10-11 19:10:11 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-11 19:10:11 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2015-10-11 19:10:11 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 19:11:39 -0400
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5[0m
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1
+  Rendered streams/_showembed.html.erb (0.1ms)
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1[0m
+  Rendered streams/_showembed.html.erb (0.1ms)
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'mlg.tv' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1
+  Rendered streams/_tabsofstreams.html.erb (1270.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered posts/_recentposts.html.erb (1.4ms)
+  Rendered welcome/frontpage.html.erb within layouts/application (1273.2ms)
+Completed 200 OK in 2527ms (Views: 2525.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 19:11:41 -0400
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1[0m
+  Rendered streams/_showembed.html.erb (0.0ms)
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1
+  Rendered streams/_showembed.html.erb (0.0ms)
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'mlg.tv' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1[0m
+  Rendered streams/_tabsofstreams.html.erb (351.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered posts/_recentposts.html.erb (1.8ms)
+  Rendered welcome/frontpage.html.erb within layouts/application (354.7ms)
+Completed 200 OK in 368ms (Views: 365.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-11 19:11:42 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-10-11 19:11:42 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-10-11 19:11:42 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-10-11 19:11:42 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-10-11 19:11:42 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-10-11 19:11:42 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-11 19:11:42 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-10-11 19:11:42 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-11 19:11:42 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-11 19:11:42 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-10-11 19:11:42 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-11 19:11:42 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-11 19:11:42 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-11 19:11:42 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-11 19:11:42 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-11 19:11:42 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-11 19:11:42 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-11 19:11:42 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-11 19:11:42 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-11 19:11:42 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-11 19:11:42 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-11 19:11:42 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-11 19:11:42 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-10-11 19:11:42 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-10-11 19:11:42 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-10-11 19:11:42 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-10-11 19:11:42 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-10-11 19:11:42 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-10-11 19:11:42 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-10-11 19:11:42 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-10-11 19:11:42 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-11 19:11:42 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2015-10-11 19:11:42 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 19:12:35 -0400
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5[0m
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1
+  Rendered streams/_showembed.html.erb (0.1ms)
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1[0m
+  Rendered streams/_showembed.html.erb (0.0ms)
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'mlg.tv' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1
+  Rendered streams/_tabsofstreams.html.erb (972.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered posts/_recentposts.html.erb (1.1ms)
+  Rendered welcome/frontpage.html.erb within layouts/application (974.9ms)
+Completed 200 OK in 2222ms (Views: 2218.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 19:12:38 -0400
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1[0m
+  Rendered streams/_showembed.html.erb (0.0ms)
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1
+  Rendered streams/_showembed.html.erb (0.0ms)
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'mlg.tv' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1[0m
+  Rendered streams/_tabsofstreams.html.erb (354.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered posts/_recentposts.html.erb (1.5ms)
+  Rendered welcome/frontpage.html.erb within layouts/application (357.2ms)
+Completed 200 OK in 370ms (Views: 367.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-11 19:12:38 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-10-11 19:12:38 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-10-11 19:12:38 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-10-11 19:12:38 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-10-11 19:12:38 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-10-11 19:12:38 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-11 19:12:38 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-10-11 19:12:38 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-11 19:12:38 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-11 19:12:38 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-10-11 19:12:38 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-11 19:12:38 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-11 19:12:38 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-11 19:12:38 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-11 19:12:38 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-11 19:12:38 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-11 19:12:38 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-11 19:12:38 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-11 19:12:38 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-11 19:12:38 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-11 19:12:38 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-11 19:12:38 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-11 19:12:38 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-10-11 19:12:38 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-10-11 19:12:38 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-10-11 19:12:38 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-10-11 19:12:38 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-10-11 19:12:38 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-10-11 19:12:38 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-10-11 19:12:38 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-10-11 19:12:38 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-11 19:12:38 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2015-10-11 19:12:38 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 19:14:08 -0400
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5[0m
+  [1m[35mStream Load (0.2ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1
+  Rendered streams/_showembed.html.erb (0.1ms)
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1[0m
+  Rendered streams/_showembed.html.erb (0.0ms)
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'mlg.tv' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1
+  Rendered streams/_tabsofstreams.html.erb (1135.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered posts/_recentposts.html.erb (1.3ms)
+  Rendered welcome/frontpage.html.erb within layouts/application (1139.6ms)
+Completed 200 OK in 2383ms (Views: 2380.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 19:14:10 -0400
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1[0m
+  Rendered streams/_showembed.html.erb (0.1ms)
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1
+  Rendered streams/_showembed.html.erb (0.0ms)
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'mlg.tv' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1[0m
+  Rendered streams/_tabsofstreams.html.erb (352.4ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered posts/_recentposts.html.erb (1.6ms)
+  Rendered welcome/frontpage.html.erb within layouts/application (355.5ms)
+Completed 200 OK in 368ms (Views: 365.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-11 19:14:11 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-10-11 19:14:11 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-10-11 19:14:11 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-10-11 19:14:11 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-10-11 19:14:11 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-10-11 19:14:11 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-11 19:14:11 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-10-11 19:14:11 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-11 19:14:11 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-11 19:14:11 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-10-11 19:14:11 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-11 19:14:11 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-11 19:14:11 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-11 19:14:11 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-11 19:14:11 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-11 19:14:11 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-11 19:14:11 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-11 19:14:11 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-11 19:14:11 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-11 19:14:11 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-11 19:14:11 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-11 19:14:11 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-11 19:14:11 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-10-11 19:14:11 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-10-11 19:14:11 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-10-11 19:14:11 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-10-11 19:14:11 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-10-11 19:14:11 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-10-11 19:14:11 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-10-11 19:14:11 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-10-11 19:14:11 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-11 19:14:11 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2015-10-11 19:14:11 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 19:15:42 -0400
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5[0m
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1
+  Rendered streams/_showembed.html.erb (0.1ms)
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1[0m
+  Rendered streams/_showembed.html.erb (0.0ms)
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'mlg.tv' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1
+  Rendered streams/_tabsofstreams.html.erb (1366.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered posts/_recentposts.html.erb (1.4ms)
+  Rendered welcome/frontpage.html.erb within layouts/application (1369.0ms)
+Completed 200 OK in 2595ms (Views: 2592.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 19:15:45 -0400
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5
+  [1m[36mStream Load (0.2ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1[0m
+  Rendered streams/_showembed.html.erb (0.1ms)
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1
+  Rendered streams/_showembed.html.erb (0.0ms)
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'mlg.tv' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1[0m
+  Rendered streams/_tabsofstreams.html.erb (359.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered posts/_recentposts.html.erb (1.2ms)
+  Rendered welcome/frontpage.html.erb within layouts/application (362.5ms)
+Completed 200 OK in 373ms (Views: 370.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-11 19:15:45 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-10-11 19:15:45 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-10-11 19:15:45 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-10-11 19:15:45 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-10-11 19:15:45 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-10-11 19:15:45 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-11 19:15:45 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-10-11 19:15:45 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-11 19:15:45 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-11 19:15:45 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-10-11 19:15:45 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-11 19:15:45 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-11 19:15:45 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-11 19:15:45 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-11 19:15:45 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-11 19:15:45 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-11 19:15:45 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-11 19:15:45 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-11 19:15:45 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-11 19:15:45 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-11 19:15:45 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-11 19:15:45 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-11 19:15:45 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-10-11 19:15:45 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-10-11 19:15:45 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-10-11 19:15:45 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-10-11 19:15:45 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-10-11 19:15:45 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-10-11 19:15:45 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-10-11 19:15:45 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-10-11 19:15:45 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-11 19:15:45 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2015-10-11 19:15:46 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 19:19:20 -0400
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5[0m
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1
+  Rendered streams/_showembed.html.erb (0.1ms)
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1[0m
+  Rendered streams/_showembed.html.erb (0.0ms)
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'mlg.tv' LIMIT 1
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1
+  Rendered streams/_tabsofstreams.html.erb (924.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered posts/_recentposts.html.erb (1.3ms)
+  Rendered welcome/frontpage.html.erb within layouts/application (927.2ms)
+Completed 200 OK in 2275ms (Views: 2271.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 19:19:22 -0400
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1[0m
+  Rendered streams/_showembed.html.erb (0.1ms)
+  [1m[35mStream Load (0.2ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1
+  Rendered streams/_showembed.html.erb (0.0ms)
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'mlg.tv' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch.tv' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'youtube.com' LIMIT 1[0m
+  Rendered streams/_tabsofstreams.html.erb (357.2ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered posts/_recentposts.html.erb (1.6ms)
+  Rendered welcome/frontpage.html.erb within layouts/application (360.2ms)
+Completed 200 OK in 373ms (Views: 369.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-11 19:19:22 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-10-11 19:19:22 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-10-11 19:19:22 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-10-11 19:19:22 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-10-11 19:19:22 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-10-11 19:19:22 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-11 19:19:22 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-10-11 19:19:22 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-11 19:19:22 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-11 19:19:22 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-10-11 19:19:22 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-11 19:19:22 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-11 19:19:22 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-11 19:19:22 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-11 19:19:22 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-11 19:19:22 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-11 19:19:23 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-11 19:19:23 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-11 19:19:23 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-11 19:19:23 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-11 19:19:23 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-11 19:19:23 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-11 19:19:23 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-10-11 19:19:23 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-10-11 19:19:23 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-10-11 19:19:23 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-10-11 19:19:23 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-10-11 19:19:23 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-10-11 19:19:23 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-10-11 19:19:23 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-10-11 19:19:23 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-11 19:19:23 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2015-10-11 19:19:23 -0400
