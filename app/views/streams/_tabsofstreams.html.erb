@@ -1,19 +1,19 @@
 <script>
-  $(function() {
+$(function() {
   $("#twitch-tab").click(function(){
-    $("#video-player").innerhtml("<%= escape_javascript(render 'streams/showembed', :stream_link => Stream.find_by_source('twitch.tv').streamuri) %>");
+    $("#video-player").html("<div class='video-player'><iframe  src='http://twitch.tv/schamtoo/embed' frameborder='0' allowfullscreen></iframe></div>")
     $document.getElementById(/([A-z])\w+-/+"tab").className="";
     $document.getElementById("twitch-tab").className="Active";
     return false;
   });
   $("#mlg-tab").click(function(){
-    $("#video-player").html("<p1>ROFL</p1>");
+    $("#video-player").html("<div class='video-player'><iframe src='http://tv.majorleaguegaming.com/player/embed/schamtoo' frameborder='0' allowfullscreen></iframe></div>")
     $document.getElementById(/([A-z])\w+-/+"tab").className="";
     $document.getElementById("mlg-tab").className="Active";
     return false;
   });
   $("#youtube-tab").click(function(){
-    $("#video-player").html("<%= render 'streams/showembed', :stream_link => Stream.find_by_source('youtube.com').streamuri %>"); 
+    $("#video-player").html("<div class='video-player'><iframe src='https://www.youtube.com/embed/iuQY9HHZQpA?list=PLYWkkXRQ3uYUsKKFfY37lEbwoY8wilSYt' frameborder='0' allowfullscreen></iframe></div>")
     $document.getElementById(/([A-z])\w+-/+"tab").className="";
     $document.getElementById("mlg-tab").className="Active";
     return false;
