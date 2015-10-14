@@ -1,2 +1,4 @@
 tmp/
 test/
+*.db
+*.sqlite3
