@@ -3,30 +3,34 @@
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #ffffff;
 .header-container{
-	font-size: 100%;
-	font-style: bold;
-	font-family: $font-stack;
+	margin: 0px auto;
 	width: 100%;
 	position: relative;
 	bottom: 0px;
-	color: #003664;
-	font-size: 50px;
+	background: #FFFFFF;
 	font-weight: bold;
-	position: relative;
-}
-.header{
+	height: 100px;
+	float: left;
 	top: 0px;
-	height: 50px;
+}
+.header-title{
 	color: #003664;
 	background: #FFFFFF;
-	width: 100%;
-	margin: 0px auto;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	bottom: 0;
+	left: 0;
 	position: absolute;
+	font-weight: bold;
+	font-size: 50px;
 }
 body {
   font: 100% $font-stack;
   color: $primary-color;
   background-color: #003664;
+  position: relative;
+  margin: 0px;
 }
 
 
