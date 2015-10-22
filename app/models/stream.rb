@@ -1,5 +1,6 @@
 require 'open-uri'
 class Stream < ActiveRecord::Base
+	
 	def self.live_stream_set_at 
 	 	@live_stream_set_at ||= Time.now 
 	end

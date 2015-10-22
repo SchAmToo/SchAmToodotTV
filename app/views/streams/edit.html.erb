@@ -1,7 +1,7 @@
 <%= render "sessions/session" %>
 <h1>Editing Streams</h1>
 <% for stream in Stream.all %> 
-	<%= render 'form' %>
+	<%= render partial: 'form', locals: {path: {controller: "streams", action: (edit)}}%>
 <% end %>
 
 <%= link_to 'Back', posts_path %>

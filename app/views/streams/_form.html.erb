@@ -2,7 +2,7 @@
 
 
 
- <%= form_for :stream, url: posts_path do |stream| %>
+ <%= form_for (@stream) do |stream| %>
  <% if @stream.errors.any? %>
 	<div id="error_explanation">
 	<h2><%= pluralize(@stream.errors.count, "error") %> prohibited
@@ -13,7 +13,7 @@
 	<% end %>
 	</u1>
 	</div>
-	<% end %>
+<% end %>
 	<p> 
 		<%= stream.label :source %><br>
 		<%= stream.text_field :source %>
@@ -28,12 +28,12 @@
 		<%= stream.text_field :stream_api_url %>
 	</p>
 	<p>
-		<%= stream.label :text_to_scrape %><br>
-		<%= stream.text_field :text_to_scrape %>
+		<%= stream.label :text_to_scrap %><br>
+		<%= stream.text_field :text_to_scrap %>
 	</p>
 	<p>
-		<%= stream.label :toggle_online %><br>
-		<%= stream.text_field :toggle_online %>
+		<%= stream.label :toggle_live %><br>
+		<%= stream.check_box :toggle_live %>
 	</p>
 	<p>
 		<%= stream.submit %>
