@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150307195747) do
+ActiveRecord::Schema.define(version: 20151022020336) do
 
   create_table "comments", force: true do |t|
     t.text     "body"
@@ -40,6 +40,10 @@ ActiveRecord::Schema.define(version: 20150307195747) do
     t.string   "streamuri"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "isLive"
+    t.boolean  "toggle_live"
+    t.string   "stream_api_url"
+    t.string   "text_to_scrap"
   end
 
   create_table "users", force: true do |t|

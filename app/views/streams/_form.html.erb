@@ -1,0 +1,41 @@
+
+
+
+
+ <%= form_for :stream, url: posts_path do |stream| %>
+ <% if @stream.errors.any? %>
+	<div id="error_explanation">
+	<h2><%= pluralize(@stream.errors.count, "error") %> prohibited
+		this post from being saved:</h2>
+	<u1>
+	<% @stream.errors.full_messages.each do |msg| %>
+		<li><%= msg %></li>
+	<% end %>
+	</u1>
+	</div>
+	<% end %>
+	<p> 
+		<%= stream.label :source %><br>
+		<%= stream.text_field :source %>
+	</p>
+	
+	<p>
+		<%= stream.label :streamuri %><br>
+		<%= stream.text_field :streamuri %>
+	</p>
+	<p>
+		<%= stream.label :stream_api_url %><br>
+		<%= stream.text_field :stream_api_url %>
+	</p>
+	<p>
+		<%= stream.label :text_to_scrape %><br>
+		<%= stream.text_field :text_to_scrape %>
+	</p>
+	<p>
+		<%= stream.label :toggle_online %><br>
+		<%= stream.text_field :toggle_online %>
+	</p>
+	<p>
+		<%= stream.submit %>
+	</p>
+<% end %>

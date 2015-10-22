@@ -3,7 +3,7 @@ class StreamsController < ApplicationController
 		@stream = Stream.new
 	end
 	def create
-	    @stream = Stream.new(params[:stream].permit(:source, :streamuri))
+	    @stream = Stream.new(params[:stream].permit(:source, :streamuri, :stream_api_url, :toggle_live, :text_to_scrape))
 	    @stream.save
 		redirect(action: "show", id: tag.id)
 	end
@@ -39,6 +39,7 @@ class StreamsController < ApplicationController
 		respond_to do |format|
 			application.js
 		end
+	end
 end
 
 #allow me to define stream (current casting place) (POST UPDATE)
