@@ -40,7 +40,6 @@ ActiveRecord::Schema.define(version: 20151022020336) do
     t.string   "streamuri"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "isLive"
     t.boolean  "toggle_live"
     t.string   "stream_api_url"
     t.string   "text_to_scrape"

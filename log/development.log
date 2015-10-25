@@ -3959,3 +3959,410 @@ Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-10-21 23:30:28 -04
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-21 23:30:28 -0400
   [1m[36mStream Load (0.3ms)[0m  [1mSELECT "streams".* FROM "streams"[0m
+
+
+Started GET "/streams" for 127.0.0.1 at 2015-10-21 23:34:57 -0400
+Processing by StreamsController#index as HTML
+  [1m[35mStream Load (0.1ms)[0m  SELECT "streams".* FROM "streams"
+  Rendered streams/_form.html.erb (2.3ms)
+  Rendered streams/_form.html.erb (2.2ms)
+  Rendered streams/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 22ms (Views: 21.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-21 23:34:57 -0400
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-10-21 23:34:57 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-10-21 23:34:57 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-10-21 23:34:57 -0400
+
+
+Started GET "/assets/stream.css?body=1" for 127.0.0.1 at 2015-10-21 23:34:57 -0400
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2015-10-21 23:34:57 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-10-21 23:34:57 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-10-21 23:34:57 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-21 23:34:57 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-21 23:34:57 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-10-21 23:34:57 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-21 23:34:57 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-21 23:34:57 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-21 23:34:57 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-21 23:34:57 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-21 23:34:57 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-21 23:34:57 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-21 23:34:57 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-21 23:34:57 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-21 23:34:57 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-21 23:34:57 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-21 23:34:57 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-21 23:34:57 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-10-21 23:34:57 -0400
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-10-21 23:34:57 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-10-21 23:34:57 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-10-21 23:34:57 -0400
+
+
+Started GET "/assets/stream.js?body=1" for 127.0.0.1 at 2015-10-21 23:34:57 -0400
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-10-21 23:34:57 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-10-21 23:34:57 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-10-21 23:34:57 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-21 23:34:57 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-23 20:13:19 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5
+  Rendered streams/_tabsofstreams.html.erb (3.3ms)
+  Rendered welcome/frontpage.html.erb within layouts/application (13.8ms)
+Completed 500 Internal Server Error in 46ms
+
+ActionView::Template::Error (undefined method `source' for "mlg.tv":String):
+    24: 
+    25: <div id="tabs" class="video-tabs">
+    26:   <ul id ="video-choices" class="nav nav-tabs" >
+    27:     <li id="mlg-tab" class="active"><a data-toggle="tab" href="#MLGtv">MLGtv <%= checkOnline("mlg.tv") %> </a></li>
+    28:     <li id="twitch-tab"><a data-toggle="tab" href="#Twitch">Twitch <%= checkOnline("twitch.tv") %> </a></li>
+    29:     <li id="youtube-tab"><a data-toggle="tab" href="#Youtube">YouTube <%= checkOnline("youtube.com") %> </a></li>
+    30:   </ul> 
+  app/helpers/streams_helper.rb:4:in `checkOnline'
+  app/views/streams/_tabsofstreams.html.erb:27:in `_app_views_streams__tabsofstreams_html_erb___83372474331491520_2160453220'
+  app/views/welcome/frontpage.html.erb:6:in `_app_views_welcome_frontpage_html_erb__2042052520978805906_2190563340'
+
+
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-23 20:15:01 -0400
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5[0m
+  Rendered streams/_tabsofstreams.html.erb (1.5ms)
+  Rendered welcome/frontpage.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (/Users/SchAmToo/Programmings/SchAmTooDotTV/app/models/stream.rb:19: syntax error, unexpected ':', expecting keyword_then or ';' or '\n'
+/Users/SchAmToo/Programmings/SchAmTooDotTV/app/models/stream.rb:28: syntax error, unexpected keyword_end, expecting end-of-input):
+    24: 
+    25: <div id="tabs" class="video-tabs">
+    26:   <ul id ="video-choices" class="nav nav-tabs" >
+    27:     <li id="mlg-tab" class="active"><a data-toggle="tab" href="#MLGtv">MLGtv <%= Stream.find_by_source("twitch").is_stream_live %> </a></li>
+    28:     <li id="twitch-tab"><a data-toggle="tab" href="#Twitch">Twitch  </a></li>
+    29:     <li id="youtube-tab"><a data-toggle="tab" href="#Youtube">YouTube</a></li>
+    30:   </ul> 
+  app/views/streams/_tabsofstreams.html.erb:27:in `_app_views_streams__tabsofstreams_html_erb___83372474331491520_2159115560'
+  app/views/welcome/frontpage.html.erb:6:in `_app_views_welcome_frontpage_html_erb__2042052520978805906_2190563340'
+
+
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-23 20:15:49 -0400
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5
+  [1m[36mStream Load (0.4ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch' LIMIT 1[0m
+  Rendered streams/_tabsofstreams.html.erb (4.6ms)
+  Rendered welcome/frontpage.html.erb within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined method `is_stream_live' for nil:NilClass):
+    24: 
+    25: <div id="tabs" class="video-tabs">
+    26:   <ul id ="video-choices" class="nav nav-tabs" >
+    27:     <li id="mlg-tab" class="active"><a data-toggle="tab" href="#MLGtv">MLGtv <%= Stream.find_by_source("twitch").is_stream_live %> </a></li>
+    28:     <li id="twitch-tab"><a data-toggle="tab" href="#Twitch">Twitch  </a></li>
+    29:     <li id="youtube-tab"><a data-toggle="tab" href="#Youtube">YouTube</a></li>
+    30:   </ul> 
+  app/views/streams/_tabsofstreams.html.erb:27:in `_app_views_streams__tabsofstreams_html_erb___83372474331491520_2159115560'
+  app/views/welcome/frontpage.html.erb:6:in `_app_views_welcome_frontpage_html_erb__2042052520978805906_2190563340'
+
+
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-23 20:18:12 -0400
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch' LIMIT 1[0m
+  Rendered streams/_tabsofstreams.html.erb (2.9ms)
+  Rendered welcome/frontpage.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined method `is_stream_live' for nil:NilClass):
+    24: 
+    25: <div id="tabs" class="video-tabs">
+    26:   <ul id ="video-choices" class="nav nav-tabs" >
+    27:     <li id="mlg-tab" class="active"><a data-toggle="tab" href="#MLGtv">MLGtv <%= pause_or_play(Stream.find_by_source("twitch")) %> </a></li>
+    28:     <li id="twitch-tab"><a data-toggle="tab" href="#Twitch">Twitch  </a></li>
+    29:     <li id="youtube-tab"><a data-toggle="tab" href="#Youtube">YouTube</a></li>
+    30:   </ul> 
+  app/helpers/streams_helper.rb:23:in `pause_or_play'
+  app/views/streams/_tabsofstreams.html.erb:27:in `_app_views_streams__tabsofstreams_html_erb___83372474331491520_2159885700'
+  app/views/welcome/frontpage.html.erb:6:in `_app_views_welcome_frontpage_html_erb__2042052520978805906_2190563340'
+
+
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-23 21:54:10 -0400
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5
+  [1m[36mStream Load (0.2ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch' LIMIT 1[0m
+  Rendered streams/_tabsofstreams.html.erb (2.0ms)
+  Rendered welcome/frontpage.html.erb within layouts/application (10.4ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (undefined method `is_stream_live' for nil:NilClass):
+    24: 
+    25: <div id="tabs" class="video-tabs">
+    26:   <ul id ="video-choices" class="nav nav-tabs" >
+    27:     <li id="mlg-tab" class="active"><a data-toggle="tab" href="#MLGtv">MLGtv <%= pause_or_play(Stream.find_by_source("twitch")) %> </a></li>
+    28:     <li id="twitch-tab"><a data-toggle="tab" href="#Twitch">Twitch  </a></li>
+    29:     <li id="youtube-tab"><a data-toggle="tab" href="#Youtube">YouTube</a></li>
+    30:   </ul> 
+  app/helpers/streams_helper.rb:23:in `pause_or_play'
+  app/views/streams/_tabsofstreams.html.erb:27:in `_app_views_streams__tabsofstreams_html_erb___83372474331491520_2159885700'
+  app/views/welcome/frontpage.html.erb:6:in `_app_views_welcome_frontpage_html_erb__2042052520978805906_2190563340'
+
+
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-23 21:55:32 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#frontpage as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from frontpage at /Users/SchAmToo/Programmings/SchAmTooDotTV/app/controllers/welcome_controller.rb:8)
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" ORDER BY id desc LIMIT 5
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."source" = 'twitch' LIMIT 1[0m
+  Rendered streams/_tabsofstreams.html.erb (6.0ms)
+  Rendered welcome/frontpage.html.erb within layouts/application (8.9ms)
+Completed 500 Internal Server Error in 41ms
+
+ActionView::Template::Error (undefined method `is_stream_live' for nil:NilClass):
+    24: 
+    25: <div id="tabs" class="video-tabs">
+    26:   <ul id ="video-choices" class="nav nav-tabs" >
+    27:     <li id="mlg-tab" class="active"><a data-toggle="tab" href="#MLGtv">MLGtv <%= pause_or_play(Stream.find_by_source("twitch")) %> </a></li>
+    28:     <li id="twitch-tab"><a data-toggle="tab" href="#Twitch">Twitch  </a></li>
+    29:     <li id="youtube-tab"><a data-toggle="tab" href="#Youtube">YouTube</a></li>
+    30:   </ul> 
+  app/helpers/streams_helper.rb:23:in `pause_or_play'
+  app/views/streams/_tabsofstreams.html.erb:27:in `_app_views_streams__tabsofstreams_html_erb___3283587703717387030_2175250880'
+  app/views/welcome/frontpage.html.erb:6:in `_app_views_welcome_frontpage_html_erb___4226671088469861092_2175132600'
+
+
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/SchAmToo/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.4ms)
+  [1m[36mStream Load (0.5ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = 1 LIMIT 1[0m
+  [1m[36mStream Load (0.4ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = 1 LIMIT 1[0m
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mStream Load (0.2ms)[0m  SELECT "streams".* FROM "streams"
+  [1m[36mStream Load (1.4ms)[0m  [1mSELECT "streams".* FROM "streams"[0m
+  [1m[35mStream Load (0.2ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = 1 LIMIT 1
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to AddStreamApiTextToScrapeToggleOnlinetoStreams (20151022020336)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.3ms)[0m  CREATE TEMPORARY TABLE "astreams" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "source" varchar(255), "streamuri" varchar(255), "created_at" datetime, "updated_at" datetime, "isLive" boolean, "toggle_live" boolean, "stream_api_url" varchar(255), "text_to_scrap" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "streams"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "astreams" ("id","source","streamuri","created_at","updated_at","isLive","toggle_live","stream_api_url","text_to_scrap") VALUES (1, 'Twitch', 'http://twitch.tv/schamtoo/embed', '2015-10-22 02:56:58.012358', '2015-10-22 02:56:58.012358', NULL, 'f', 'https://api.twitch.tv/kraken/streams/schamtoo', '''"stream":null''')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "astreams" ("id","source","streamuri","created_at","updated_at","isLive","toggle_live","stream_api_url","text_to_scrap") VALUES (2, 'Twitch', 'http://twitch.tv/schamtoo/embed', '2015-10-22 02:59:46.939409', '2015-10-22 02:59:46.939409', NULL, 'f', 'https://api.twitch.tv/kraken/streams/schamtoo', '''"stream":null''')[0m
+  [1m[35m (0.9ms)[0m  DROP TABLE "streams"
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "streams" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "source" varchar(255), "streamuri" varchar(255), "created_at" datetime, "updated_at" datetime, "isLive" boolean, "toggle_live" boolean, "stream_api_url" varchar(255), "text_to_scrap" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "astreams"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "streams" ("id","source","streamuri","created_at","updated_at","isLive","toggle_live","stream_api_url","text_to_scrap") VALUES (1, 'Twitch', 'http://twitch.tv/schamtoo/embed', '2015-10-22 02:56:58.012358', '2015-10-22 02:56:58.012358', NULL, 'f', 'https://api.twitch.tv/kraken/streams/schamtoo', '''"stream":null''')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "streams" ("id","source","streamuri","created_at","updated_at","isLive","toggle_live","stream_api_url","text_to_scrap") VALUES (2, 'Twitch', 'http://twitch.tv/schamtoo/embed', '2015-10-22 02:59:46.939409', '2015-10-22 02:59:46.939409', NULL, 'f', 'https://api.twitch.tv/kraken/streams/schamtoo', '''"stream":null''')
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "astreams"[0m
+  [1m[35m (0.1ms)[0m  CREATE TEMPORARY TABLE "astreams" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "source" varchar(255), "streamuri" varchar(255), "created_at" datetime, "updated_at" datetime, "isLive" boolean, "toggle_live" boolean, "stream_api_url" varchar(255), "text_to_scrap" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "streams"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "astreams" ("id","source","streamuri","created_at","updated_at","isLive","toggle_live","stream_api_url","text_to_scrap") VALUES (1, 'Twitch', 'http://twitch.tv/schamtoo/embed', '2015-10-22 02:56:58.012358', '2015-10-22 02:56:58.012358', NULL, 'f', 'https://api.twitch.tv/kraken/streams/schamtoo', '''"stream":null''')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "astreams" ("id","source","streamuri","created_at","updated_at","isLive","toggle_live","stream_api_url","text_to_scrap") VALUES (2, 'Twitch', 'http://twitch.tv/schamtoo/embed', '2015-10-22 02:59:46.939409', '2015-10-22 02:59:46.939409', NULL, 'f', 'https://api.twitch.tv/kraken/streams/schamtoo', '''"stream":null''')[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "streams"
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "streams" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "source" varchar(255), "streamuri" varchar(255), "created_at" datetime, "updated_at" datetime, "isLive" boolean, "toggle_live" boolean, "text_to_scrap" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "astreams"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "streams" ("id","source","streamuri","created_at","updated_at","isLive","toggle_live","text_to_scrap") VALUES (1, 'Twitch', 'http://twitch.tv/schamtoo/embed', '2015-10-22 02:56:58.012358', '2015-10-22 02:56:58.012358', NULL, 'f', '''"stream":null''')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "streams" ("id","source","streamuri","created_at","updated_at","isLive","toggle_live","text_to_scrap") VALUES (2, 'Twitch', 'http://twitch.tv/schamtoo/embed', '2015-10-22 02:59:46.939409', '2015-10-22 02:59:46.939409', NULL, 'f', '''"stream":null''')
+  [1m[36m (0.1ms)[0m  [1mDROP TABLE "astreams"[0m
+  [1m[35m (0.1ms)[0m  CREATE TEMPORARY TABLE "astreams" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "source" varchar(255), "streamuri" varchar(255), "created_at" datetime, "updated_at" datetime, "isLive" boolean, "toggle_live" boolean, "text_to_scrap" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "streams"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "astreams" ("id","source","streamuri","created_at","updated_at","isLive","toggle_live","text_to_scrap") VALUES (1, 'Twitch', 'http://twitch.tv/schamtoo/embed', '2015-10-22 02:56:58.012358', '2015-10-22 02:56:58.012358', NULL, 'f', '''"stream":null''')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "astreams" ("id","source","streamuri","created_at","updated_at","isLive","toggle_live","text_to_scrap") VALUES (2, 'Twitch', 'http://twitch.tv/schamtoo/embed', '2015-10-22 02:59:46.939409', '2015-10-22 02:59:46.939409', NULL, 'f', '''"stream":null''')[0m
+  [1m[35m (0.1ms)[0m  DROP TABLE "streams"
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "streams" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "source" varchar(255), "streamuri" varchar(255), "created_at" datetime, "updated_at" datetime, "isLive" boolean, "text_to_scrap" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "astreams"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "streams" ("id","source","streamuri","created_at","updated_at","isLive","text_to_scrap") VALUES (1, 'Twitch', 'http://twitch.tv/schamtoo/embed', '2015-10-22 02:56:58.012358', '2015-10-22 02:56:58.012358', NULL, '''"stream":null''')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "streams" ("id","source","streamuri","created_at","updated_at","isLive","text_to_scrap") VALUES (2, 'Twitch', 'http://twitch.tv/schamtoo/embed', '2015-10-22 02:59:46.939409', '2015-10-22 02:59:46.939409', NULL, '''"stream":null''')
+  [1m[36m (0.1ms)[0m  [1mDROP TABLE "astreams"[0m
+  [1m[35mSQL (0.7ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20151022020336'
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateTableStreams (20150307195747)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  DROP TABLE "streams"
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20150307195747'[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateTableStreams (20150307195747)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "streams" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "source" varchar(255), "streamuri" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150307195747"]]
+  [1m[36m (9.2ms)[0m  [1mcommit transaction[0m
+Migrating to AddStreamApiTextToScrapeToggleOnlinetoStreams (20151022020336)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "streams" ADD "toggle_live" boolean[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "streams" ADD "stream_api_url" varchar(255)
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "streams" ADD "text_to_scrape" varchar(255)[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151022020336"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mStream Load (0.8ms)[0m  [1mSELECT "streams".* FROM "streams"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (12.4ms)[0m  [1mINSERT INTO "streams" ("created_at", "source", "streamuri", "text_to_scrape", "toggle_live", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 25 Oct 2015 17:26:50 UTC +00:00], ["source", "Twitch"], ["streamuri", "http://www.twitch.tv/schamtoo/embed"], ["text_to_scrape", "\"_total\":0"], ["toggle_live", false], ["updated_at", Sun, 25 Oct 2015 17:26:50 UTC +00:00]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mStream Load (0.3ms)[0m  [1mSELECT "streams".* FROM "streams"[0m
+  [1m[36mStream Load (0.2ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = 1 LIMIT 1[0m
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = 1 LIMIT 1[0m
+  [1m[36mStream Load (0.2ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = 1 LIMIT 1[0m
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = 1 LIMIT 1[0m
+  [1m[35mStream Load (0.5ms)[0m  SELECT "streams".* FROM "streams"
+  [1m[36mStream Load (0.4ms)[0m  [1mSELECT "streams".* FROM "streams"[0m
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (11.7ms)[0m  [1mUPDATE "streams" SET "stream_api_url" = ?, "updated_at" = ? WHERE "streams"."id" = 1[0m  [["stream_api_url", "https://api.twitch.tv/kraken/streams?channel=schamtoo"], ["updated_at", Sun, 25 Oct 2015 17:48:49 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mStream Load (0.3ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = 1 LIMIT 1[0m
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = 1 LIMIT 1[0m
+  [1m[36mStream Load (0.2ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.1ms)[0m  [1mUPDATE "streams" SET "text_to_scrape" = ?, "updated_at" = ? WHERE "streams"."id" = 1[0m  [["text_to_scrape", "total"], ["updated_at", Sun, 25 Oct 2015 17:52:40 UTC +00:00]]
+  [1m[35m (8.8ms)[0m  commit transaction
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = 1 LIMIT 1[0m
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = 1 LIMIT 1[0m
+  [1m[36mStream Load (0.2ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (4.3ms)[0m  [1mUPDATE "streams" SET "text_to_scrape" = ?, "updated_at" = ? WHERE "streams"."id" = 1[0m  [["text_to_scrape", "\"viewers\":"], ["updated_at", Sun, 25 Oct 2015 18:01:57 UTC +00:00]]
+  [1m[35m (8.8ms)[0m  commit transaction
+  [1m[36mStream Load (0.2ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (4.2ms)[0m  [1mINSERT INTO "streams" ("created_at", "source", "stream_api_url", "streamuri", "text_to_scrape", "toggle_live", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 25 Oct 2015 18:06:19 UTC +00:00], ["source", "MLG"], ["stream_api_url", "http://streamapi.majorleaguegaming.com/service/streams/status/mlg302?callback=callback"], ["streamuri", "http://tv.majorleaguegaming.com/player/embed/schamtoo"], ["text_to_scrape", "\"status\": -1,"], ["toggle_live", false], ["updated_at", Sun, 25 Oct 2015 18:06:19 UTC +00:00]]
+  [1m[35m (9.1ms)[0m  commit transaction
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = 1 LIMIT 1[0m
+  [1m[35mStream Load (0.2ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = 2 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  UPDATE "streams" SET "text_to_scrape" = ?, "updated_at" = ? WHERE "streams"."id" = 2  [["text_to_scrape", "\"status\": 1,"], ["updated_at", Sun, 25 Oct 2015 18:11:19 UTC +00:00]]
+  [1m[36m (8.9ms)[0m  [1mcommit transaction[0m
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = 1 LIMIT 1[0m
+  [1m[35mStream Load (0.3ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = 2 LIMIT 1
+  [1m[36mStream Load (0.3ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = 1 LIMIT 1[0m
+  [1m[35mStream Load (0.2ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = 2 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.6ms)[0m  UPDATE "streams" SET "text_to_scrape" = ?, "updated_at" = ? WHERE "streams"."id" = 2  [["text_to_scrape", "\"status\": -1,"], ["updated_at", Sun, 25 Oct 2015 18:32:55 UTC +00:00]]
+  [1m[36m (8.0ms)[0m  [1mcommit transaction[0m
+  [1m[36mStream Load (0.2ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = 2 LIMIT 1[0m
+  [1m[35mStream Load (0.2ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = 1 LIMIT 1
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = 2 LIMIT 1[0m
+  [1m[35mStream Load (0.3ms)[0m  SELECT "streams".* FROM "streams" WHERE "streams"."id" = 1 LIMIT 1
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = 2 LIMIT 1[0m
+  [1m[36mStream Load (0.2ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = 2 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.2ms)[0m  [1mUPDATE "streams" SET "text_to_scrape" = ?, "updated_at" = ? WHERE "streams"."id" = 2[0m  [["text_to_scrape", "\"status\": 1,"], ["updated_at", Sun, 25 Oct 2015 18:43:33 UTC +00:00]]
+  [1m[35m (8.7ms)[0m  commit transaction
+  [1m[36mStream Load (0.2ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = 2 LIMIT 1[0m
+  [1m[36mStream Load (0.2ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = 2 LIMIT 1[0m
+  [1m[36mStream Load (0.2ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = 2 LIMIT 1[0m
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = 2 LIMIT 1[0m
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = 2 LIMIT 1[0m
+  [1m[36mStream Load (0.3ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = 2 LIMIT 1[0m
+  [1m[36mStream Load (0.1ms)[0m  [1mSELECT "streams".* FROM "streams" WHERE "streams"."id" = 2 LIMIT 1[0m

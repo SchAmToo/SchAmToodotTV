@@ -16,7 +16,7 @@ class StreamsController < ApplicationController
 	end
 	def show 
 		#check mlg
-		@stream = Stream.find(params[:id])
+		@stream = Stream.find(params[:id])	
 		
 	end	
 	def index

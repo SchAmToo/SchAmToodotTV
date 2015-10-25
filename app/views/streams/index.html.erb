@@ -2,6 +2,5 @@
 <p>TESTTTT</p>
 
 <% @streams.each do |stream| %>
-	<%= render 'form', :@stream => stream %>
-	<iframe width="560" height="315" src=<%= stream.streamuri %> frameborder="0" allowfullscreen></iframe>
+	<%= render 'form', :@stream => stream %><iframe width="560" height="315" src=<%= stream.streamuri %> frameborder="0" allowfullscreen></iframe>
 <% end %>
