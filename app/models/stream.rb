@@ -1,42 +1,29 @@
 require 'open-uri'
 class Stream < ActiveRecord::Base
 	def set_stream_live?
-	 	p last_time_checked
-	 	#if the value of time from last it was checked is a higher number than current time - 2 minutes (I.e. if it happened < 2 minutes ago)
-
-	 	if (last_time_checked > (Time.now - 2*60)) && (is_stream_live)
-	 		return true
-	 	else
-	 	#if 2 minutes ago is a greater value than the last it was checked 
-	 		if (last_time_checked < (Time.now - 2*60))
-	 				last_time_checked = Time.now
-		 			if checkOnline?
-		 				is_stream_live = true
-		 				return true
-		 			else
-		 				is_stream_live = false
-		 				return false
-	 				end
-	 		else
-	 			return false
-	 		end
+	 	if last_time_checked < (Time.now - 2*60)
+	 		Stream.find_streams_online
+	 		last_time_checked = Time.now
  		end
-
- 		# if last time check was recent and the stream was LIVE last it was checked, true.
- 		# if the last time checked expired, check stream again, if it's live, true. set the last time checked to now.
- 		# if both those weren't true, we just checked again, still false. return false. 
-
-
+ 		if Stream.find_streams_online.include?(self)
+ 			return true
+		else
+			return false
+		end
 	end
+
+	def self.find_streams_online
+		Stream.all.select do |stream|
+			stream.checkOnline?
+		end
+	end
+
 
 	def last_time_checked
 		@last_time_checked ||= ( Time.now - 2*60)
 	end 
-	def is_stream_live
-		@is_stream_live ||= false
-	end
+
 	def checkOnline?
-		p "Nokogiri"
 		nokogiri_scrape = Nokogiri::HTML(open(self.stream_api_url))
 		nokogiri_scrape.text.match(self.text_to_scrape)
 	end
