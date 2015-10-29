@@ -1,6 +1,9 @@
-<h1>streams#index</h1>
-<p>TESTTTT</p>
+<%= render 'sessions/session' %>
+<% if current_user?(User.find_by_login("Schamtoo")) %>
+	<% @streams.each do |stream| %>
+		<%= render 'form', :@stream => stream %><iframe width="560" height="315" src=<%= stream.streamuri %> frameborder="0" allowfullscreen></iframe>
+	<% end %>
+<% else %>
+	<h1> 403 Forbidden </h1>
 
-<% @streams.each do |stream| %>
-	<%= render 'form', :@stream => stream %><iframe width="560" height="315" src=<%= stream.streamuri %> frameborder="0" allowfullscreen></iframe>
-<% end %>
+<% end %>  

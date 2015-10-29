@@ -3,12 +3,13 @@ class StreamsController < ApplicationController
 		@stream = Stream.new
 	end
 	def create
-	    @stream = Stream.new(params[:stream].permit(:source, :streamuri, :stream_api_url, :toggle_live, :text_to_scrap))
+	    @stream = Stream.new(params[:stream].permit(:source, :streamuri, :stream_api_url, :toggle_live, :text_to_scrape))
 	    @stream.save
 	end
 	def update
 		@stream = Stream.find(params[:id])
-		@stream.update(params(:source, :streamuri))
+		@stream.update(params[:stream].permit(:source, :streamuri, :stream_api_url, :toggle_live, :text_to_scrape))
+		redirect_to streams_path
 	end
 	def destroy
 		@stream = Stream.find(params[:id])

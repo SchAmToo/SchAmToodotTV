@@ -8,14 +8,15 @@ class Stream < ActiveRecord::Base
  	def self.live_streams
  		if cache_stale?
 	 		@live_streams = Stream.find_online_streams
-	 		last_time_checked = Time.now
+	 		@last_time_checked = Time.now
+	 		File.open("export-streams.json", "w") { |f| f.write Stream.all.to_json }
  		end
  		@live_streams
  	end
 
 	def self.find_online_streams
 		Stream.all.select do |stream|
-			stream.is_live?
+			stream.is_live? || stream.toggle_live
 		end
 	end
 
@@ -28,6 +29,7 @@ class Stream < ActiveRecord::Base
 	end 
 
 	def is_live?
+		p "Nokogiri Hit"
 		nokogiri_scrape = Nokogiri::HTML(open(self.stream_api_url))
 		nokogiri_scrape.text.match(self.text_to_scrape)
 	end

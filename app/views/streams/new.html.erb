@@ -1,1 +1,6 @@
+<%= render 'sessions/session' %>
+<% if current_user?(User.find_by_login("Schamtoo")) %>
 <%= render 'form' %>
+<% else %>
+<h1> 403 Forbidden </h1>
+<% end %>

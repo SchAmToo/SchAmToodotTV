@@ -25,8 +25,8 @@ $(function() {
 <div id="tabs" class="video-tabs">
   <ul id ="video-choices" class="nav nav-tabs" >
     <li id="mlg-tab" class="active"><a data-toggle="tab" href="#MLGtv">MLGtv <%= pause_or_play(Stream.find_by_source("MLG")) %> </a></li>
-    <li id="twitch-tab"><a data-toggle="tab" href="#Twitch">Twitch  </a></li>
-    <li id="youtube-tab"><a data-toggle="tab" href="#Youtube">YouTube</a></li>
+    <li id="twitch-tab"><a data-toggle="tab" href="#Twitch">Twitch <%= pause_or_play(Stream.find_by_source("Twitch")) %>  </a></li>
+    <li id="youtube-tab"><a data-toggle="tab" href="#Youtube">YouTube </a></li>
   </ul> 
 </div>
 <div class="video-player-container">

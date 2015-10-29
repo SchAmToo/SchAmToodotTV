@@ -28,8 +28,8 @@
 		<%= stream.text_field :stream_api_url %>
 	</p>
 	<p>
-		<%= stream.label :text_to_scrap %><br>
-		<%= stream.text_field :text_to_scrap %>
+		<%= stream.label :text_to_scrape %><br>
+		<%= stream.text_field :text_to_scrape %>
 	</p>
 	<p>
 		<%= stream.label :toggle_live %><br>
@@ -38,4 +38,6 @@
 	<p>
 		<%= stream.submit %>
 	</p>
+	<%= link_to 'Delete', stream_path(stream), method: :delete, data: { confirm: 'You sho bot dat?' } %>
+
 <% end %>
