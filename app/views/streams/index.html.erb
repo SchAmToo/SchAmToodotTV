@@ -1,7 +1,14 @@
 <%= render 'sessions/session' %>
 <% if current_user?(User.find_by_login("Schamtoo")) %>
 	<% @streams.each do |stream| %>
-		<%= render 'form', :@stream => stream %><iframe width="560" height="315" src=<%= stream.streamuri %> frameborder="0" allowfullscreen></iframe>
+	<div class = "admin_block">
+		<div class = "admin_left_column">
+			<%= render 'form', :@stream => stream %>
+		</div>
+		<div class = "admin_right_column">
+			<iframe width="560" height="315" style="float: right;" src=<%= stream.streamuri %> frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
 	<% end %>
 <% else %>
 	<h1> 403 Forbidden </h1>

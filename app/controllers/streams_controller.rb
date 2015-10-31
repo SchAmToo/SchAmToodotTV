@@ -23,11 +23,7 @@ class StreamsController < ApplicationController
 	def index
 		@streams = Stream.all
 	end
-	def stream_window
-		@twitch_stream = Stream.find_by_source("twitch.tv").streamuri
-		@mlg_stream = Stream.find_by_source("mlg.tv").streamuri
-		@youtube_video = Stream.find_by_source("youtube.com").streamuri
-	end
+
 end
 #allow me to define stream (current casting place) (POST UPDATE)
 #pop up only when live (UPDATE)

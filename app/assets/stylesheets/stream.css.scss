@@ -2,6 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+* {
+  color:white;
+}
+
+input {
+  color:#666;
+}
 
 .content {
 	position:relative;
@@ -29,7 +36,29 @@
   width:90%;
   margin: 0 auto;
 }
+
 .video-tabs{
 	width:90%;
 	margin: auto;
+}
+
+.admin_block{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    /*height: auto; */
+    border: 2px solid grey;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+}
+
+.admin_left_column{
+    width: 40%;
+    float: left;
+}
+
+.admin_right_column{
+    width:60%;
+    float: right;
 }
