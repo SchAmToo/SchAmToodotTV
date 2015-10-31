@@ -1,32 +1,35 @@
 <script>
 $(function() {
-  $("#twitch-tab").click(function(){
-    $("#video-player").html("<div class='video-player'><iframe  src='http://twitch.tv/schamtoo/embed' frameborder='0' allowfullscreen></iframe></div>")
+<% Stream.all.each do |stream| %>
+  $("#<%= stream.source %>-tab").click(function(){
+    $("#video-player").html("<div class='video-player'><iframe  src='<%= stream.streamuri %>' frameborder='0' allowfullscreen></iframe></div>")
     $document.getElementById(/([A-z])\w+-/+"tab").className="";
-    $document.getElementById("twitch-tab").className="Active";
+    $document.getElementById("<%= stream.source %>-tab").className="Active";
     return false;
   });
-  $("#mlg-tab").click(function(){
-    $("#video-player").html("<div class='video-player'><iframe src='http://tv.majorleaguegaming.com/player/embed/schamtoo' frameborder='0' allowfullscreen></iframe></div>")
-    $document.getElementById(/([A-z])\w+-/+"tab").className="";
-    $document.getElementById("mlg-tab").className="Active";
-    return false;
-  });
-  $("#youtube-tab").click(function(){
-    $("#video-player").html("<div class='video-player'><iframe src='https://www.youtube.com/embed/iuQY9HHZQpA?list=PLYWkkXRQ3uYUsKKFfY37lEbwoY8wilSYt' frameborder='0' allowfullscreen></iframe></div>")
-    $document.getElementById(/([A-z])\w+-/+"tab").className="";
-    $document.getElementById("mlg-tab").className="Active";
-    return false;
-  });
+<% end %>
+  // });
+  // $("#mlg-tab").click(function(){
+  //   $("#video-player").html("<div class='video-player'><iframe src='http://tv.majorleaguegaming.com/player/embed/schamtoo' frameborder='0' allowfullscreen></iframe></div>")
+  //   $document.getElementById(/([A-z])\w+-/+"tab").className="";
+  //   $document.getElementById("mlg-tab").className="Active";
+  //   return false;
+  // });
+  // $("#youtube-tab").click(function(){
+  //   $("#video-player").html("<div class='video-player'><iframe src='https://www.youtube.com/embed/iuQY9HHZQpA?list=PLYWkkXRQ3uYUsKKFfY37lEbwoY8wilSYt' frameborder='0' allowfullscreen></iframe></div>")
+  //   $document.getElementById(/([A-z])\w+-/+"tab").className="";
+  //   $document.getElementById("mlg-tab").className="Active";
+  //   return false;
+  // });
 });
 </script>
 
 
 <div id="tabs" class="video-tabs">
   <ul id ="video-choices" class="nav nav-tabs" >
-    <li id="mlg-tab" class="active"><a data-toggle="tab" href="#MLGtv">MLGtv <%= pause_or_play(Stream.find_by_source("MLG")) %> </a></li>
-    <li id="twitch-tab"><a data-toggle="tab" href="#Twitch">Twitch <%= pause_or_play(Stream.find_by_source("Twitch")) %>  </a></li>
-    <li id="youtube-tab"><a data-toggle="tab" href="#Youtube">YouTube </a></li>
+<% Stream.all.each do |stream| %>
+    <li id="<%= stream.source %>-tab" class=""><a data-toggle="tab" href="#<%= stream.source %>"> <%= stream.source %> <%= pause_or_play(stream.source) %> </a></li>
+<% end %>
   </ul> 
 </div>
 <div class="video-player-container">
