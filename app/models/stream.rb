@@ -24,8 +24,14 @@ class Stream < ActiveRecord::Base
 	end 
 
 	def is_live?
-		nokogiri_scrape = Nokogiri::HTML(open(self.stream_api_url))
-		nokogiri_scrape.text.match(self.text_to_scrape)
+		if self.stream_api_url.present?
+			begin
+				nokogiri_scrape = Nokogiri::HTML(open(self.stream_api_url))
+				nokogiri_scrape.text.match(self.text_to_scrape)
+			rescue
+				nokogiri_scrape = nil
+			end
+		end
 	end
 	#function to check last time stream was checked
 	#function to check if that time = 1 minute ago

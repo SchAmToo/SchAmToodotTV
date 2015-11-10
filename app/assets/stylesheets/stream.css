@@ -13,7 +13,13 @@ input {
 .content {
 	position:relative;
 }
-
+.video_block{
+  position:relative;
+  height:50%;
+  margin-bottom:10%;
+  display:block;
+  width:100%;
+}
 .video-player {
   width:100%;
   height:100%;
@@ -30,24 +36,37 @@ input {
 
 .video-player-container{ 
   position:relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  border: 5px solid grey;
+  padding-bottom: 44.75%; /* 16:9 */
+  margin-bottom: 20%;
+  border: 5px solid white;
   top: 0; left: 0;
-  width:90%;
+  height: 50%;
+  width: 80%;
   margin: 0 auto;
+}
+.nav-tabs li a{
+  background-color: dimgray;
+  border: 0px;
+}
+
+.nav-tabs a:hover{
+  color: #000000;
+  background-color:gray;
 }
 
 .video-tabs{
-	width:90%;
+	width:80%;
 	margin: auto;
+  color: gray;
 }
+
 
 .admin_block{
     margin-top: 15px;
     margin-bottom: 15px;
     overflow: hidden;
     /*height: auto; */
-    border: 2px solid grey;
+    border: 2px solid gray;
     padding-left: 5%;
     padding-right: 5%;
     width: 100%;

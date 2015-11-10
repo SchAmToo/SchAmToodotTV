@@ -1,8 +1,28 @@
+<head>
+<%= favicon_link_tag 'favicon.ico' %>
+</head>
+
 <div class="header-container">
-	<div class="header-title">Schamtoo</div>
-</div>
-<div class="body">
-	<h2>Commentator & Streamer</h2> 
-	<%= render 'streams/tabsofstreams' %>
+	<h1 class="header-title">Schamtoo</h1>
 </div>
 
+<h2 class="header-subtitle">
+	Commentator & Streamer
+</h2>
+<div class="video_block">
+<%= render 'streams/tabsofstreams' %>
+</div>
+
+
+
+<div class="resume_block">
+	<%= link_to("resume")  do %>
+		<h3 class= "resume_column_left"> Resumé</h3>
+	<% end %>
+	<div class="resume_column_right">
+		<%= link_to image_tag( "twitter-64.ico", :size => "20x20" ), "http://twitter.com/schamtoo", :target => "_blank" %>
+		<%= link_to image_tag( "youtube-64.ico", :size => "20x20"), "http://youtube.com/schamtoo", :target => "_blank" %>
+		<%= link_to image_tag( "facebook-64.ico", :size => "20x20"), "http://www.facebook.com/Kevin-SchAmToo-Pearson-225935654204092/", :target => "_blank" %>
+		<%= link_to image_tag( "github-6-64.ico",:size => "20x20" ), "http://github.com/schamtoo", :target => "_blank" %>
+	</div>
+</div>

@@ -23,7 +23,7 @@ class StreamsController < ApplicationController
 	def index
 		@streams = Stream.all
 	end
-
+	
 end
 #allow me to define stream (current casting place) (POST UPDATE)
 #pop up only when live (UPDATE)

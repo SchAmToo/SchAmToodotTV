@@ -8,6 +8,7 @@ $(function() {
     return false;
   });
 <% end %>
+
 });
 </script>
 
@@ -15,13 +16,14 @@ $(function() {
 <div id="tabs" class="video-tabs">
   <ul id ="video-choices" class="nav nav-tabs" >
 <% Stream.all.each do |stream| %>
-    <li id="<%= stream.source %>-tab" class=""><a data-toggle="tab" href="#<%= stream.source %>"> <%= stream.source %> <%= pause_or_play(stream.source) %> </a></li>
+    <% if stream == Stream.live_streams.first; active_or_not = "active"; else; active_or_not = ""; end; %>
+    <li id="<%= stream.source %>-tab" class="<%= active_or_not %>"><a data-toggle="tab" href="#<%= stream.source %>"> <%= stream.source %> <%= pause_or_play(stream) %> </a></li>
 <% end %>
   </ul> 
 </div>
 <div class="video-player-container">
   <div id="video-player" class="tab-pane fade in">
-    <div class="video-player"><iframe width="560" height="315" src="http://tv.majorleaguegaming.com/player/embed/schamtoo" frameborder="0" allowfullscreen></iframe></div>
+    <div class="video-player"><iframe width="560" height="315" src="<%= Stream.live_streams.first.streamuri %>" frameborder="0" allowfullscreen></iframe></div>
   </div>
 </div>
 <!--  -->
