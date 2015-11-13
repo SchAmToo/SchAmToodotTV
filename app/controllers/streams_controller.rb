@@ -5,6 +5,7 @@ class StreamsController < ApplicationController
 	def create
 	    @stream = Stream.new(params[:stream].permit(:source, :streamuri, :stream_api_url, :toggle_live, :text_to_scrape))
 	    @stream.save
+	    redirect_to streams_path
 	end
 	def update
 		@stream = Stream.find(params[:id])

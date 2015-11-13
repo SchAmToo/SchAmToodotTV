@@ -1,7 +1,11 @@
-
 <%= render "sessions/session" %>
-<h1>Titles</h1>
+<% if current_user?(User.find_by_login("Schamtoo")) %>
+	<h1>Titles</h1>
 
-<%= render 'form' %>
+	<%= render 'form' %>
 
-<%= link_to 'Back', posts_path %>
+	<%= link_to 'Back', posts_path %>
+<% else %> 
+	<h1> 403 Forbidden </h1>
+<% end %>
+
