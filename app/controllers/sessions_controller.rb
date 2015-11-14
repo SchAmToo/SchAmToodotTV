@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
       redirect_to user_path(User.find_by_id(current_user).login)
     else
       flash.now.alert = "Invalid login or password"
-      redirect_to log_in_path
+      redirect_to login_path
   	end
   end
   def destroy

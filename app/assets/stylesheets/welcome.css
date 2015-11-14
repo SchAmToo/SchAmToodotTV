@@ -94,3 +94,15 @@ a:hover, a:focus {
 	top:0px;
 	left:0px;
 }
+
+.blog_header{
+	margin: auto;
+	position:relative;
+	border-bottom: thin solid white;
+}
+
+.blog_block{
+	margin: auto;
+	position:relative;
+	width:80%;
+}
