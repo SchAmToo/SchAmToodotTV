@@ -15,12 +15,12 @@
 </div>
 
 <div class="blog_block">
-	<h1 class="blog_header">Blog</h1>
+	<h2 class="blog_header">Blog</h2>
 	<%  @posts.each do |post| %>
 		<td> 
 			<div class="post_title"> <%= link_to post.title, post %></div>
 			<div class="post_date"> <%=post.created_at %></div>
-			<div class="post_blurb"> <%=post.text %> </div>
+			<div class="post_blurb"> <%=post.blurb %> </div>
 		</td>
 	<% end %>
 

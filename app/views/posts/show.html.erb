@@ -5,7 +5,7 @@
 	<%= User.find_by_id(@post.user_id).login %>
 </p>
 <p>
-  <strong>Title:</strong>
+  <h1>Title:</h1>
   <%= @post.title %>
 </p>
  
@@ -15,14 +15,3 @@
 <p>
   <%= @post.text %>
 </p>
-<h2>Comments<h2>
-<%= render @post.comments %>
-
-
-<h2>Add a comment:</h2>
-<%= render "comments/form" %>
-<%= link_to 'Back', posts_path %>
-
-<% if current_user?(User.find_by_id(@post.user_id)) %>
-<%= link_to 'Edit', edit_post_path(@post) %>
-<% end %> 
