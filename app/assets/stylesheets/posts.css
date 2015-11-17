@@ -3,3 +3,26 @@
 	width: 400px;
 	height: 300px;
 }
+.post_background{
+	background:white;
+	top:0px; left:0px;
+	position:absolute;
+	height:100%;
+}
+
+.post_page_block{
+
+	margin-left: 10%;
+	margin-right: 10%;
+	padding:10px;
+	height:100%;
+	background: #003664;
+}
+
+.post_body{
+
+
+}
+.post_title{
+
+}

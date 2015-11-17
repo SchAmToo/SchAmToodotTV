@@ -121,9 +121,10 @@ a:hover, a:focus {
 }
 
 .blog_header{
-	margin: auto;
+	margin: 0px auto;
 	position:relative;
 	border-bottom: thin solid white;
+
 }
 
 .blog_block{
@@ -140,4 +141,10 @@ a:hover, a:focus {
 	padding-left: 10px;
 	font-weight:100;
 }
+.blog_posts_block{
+	background: #00294d;
+	position: relative;
+	height:100%;
+	width:100%;
 
+}

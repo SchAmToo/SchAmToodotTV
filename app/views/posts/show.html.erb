@@ -1,17 +1,14 @@
+<div class="post_background">
+<div class="post_page_block">
 <%= render 'sessions/session' %>
 
 <p>
-	<strong>Poster:</strong>
-	<%= User.find_by_id(@post.user_id).login %>
+
+  <h1 class="post_title"><%= @post.title %></h1>
 </p>
-<p>
-  <h1>Title:</h1>
-  <%= @post.title %>
+ <p>
+  <div class"post_body"><%= @post.text %></div>
 </p>
- 
-<p>
-  <strong>Text:</strong>
-</p>
-<p>
-  <%= @post.text %>
-</p>
+<%= render 'welcome/contactme_footer' %>
+</div>
+</div>
