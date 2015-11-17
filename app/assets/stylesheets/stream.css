@@ -7,10 +7,10 @@ input {
   color:#666;
 }
 /* Portrait */
-@media only screen and (max-device-width: 600px){
+@media screen and (max-width: 600px) {
   .video-player-container{ 
     width:100%;
-    padding-bottom: 50%; /* 16:9 */
+    padding-bottom: 56%; /* 16:9 */
 
   }
   .video-tabs{
@@ -21,9 +21,11 @@ input {
     padding-right: 0px;
   }
 }
-@media (min-device-width: 602px){
+@media (min-width: 602px) {
   .video-player-container{ 
     width:80%;
+    padding-bottom: 44.75%; /* 16:9 */
+
   }
   .video-tabs{
     width:80%;
@@ -59,7 +61,6 @@ input {
 
 .video-player-container{ 
   position:relative;
-  padding-bottom: 44.75%; /* 16:9 */
   margin-bottom: 20%;
   border: 5px solid white;
   top: 0; left: 0;

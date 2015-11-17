@@ -1,4 +1,29 @@
 
+@media screen and (max-width: 600px) {
+	.contactme_column_left{
+		left:0%;
+	}
+	.contactme_column_right{
+		right:0%;
+	}
+	.contactme_block{
+		padding-left: 0%;
+    	padding-right: 0%;
+	}
+
+}
+@media (min-width: 600px) {
+	.contactme_column_left{
+		left:10%;
+	}
+	.contactme_column_right{
+		right:10%;
+	}
+	.contactme_block{
+		padding-left: 10%;
+    	padding-right: 10%;
+	}
+}
 .header-container{
 	margin: 0px auto;
 	width: 100%;
@@ -7,6 +32,7 @@
 	font-weight: bold;
 	height: 100px;
 	float: left;
+	border-bottom: solid #003634;
 }
 .header-title{
 	color: #003664;
@@ -30,7 +56,7 @@
 	font-size: 30px;
 }
 
-.resume_block{
+.contactme_block{
 	display:block;
 	z-index: 1;
 	margin: 0px auto;
@@ -42,29 +68,28 @@
 	margin-top:5%;
 	border-top: thin solid white;
 	/*bottom: 0px;*/
-	padding-left: 10%;
-    padding-right: 10%;
+
 
 }
 
-.resume_column_left{
+.contactme_column_left{
 	padding: 0px;
 	margin: 0px auto;
-	position:relative;
+	position:absolute;
     width: 50%;
     height: 100%;
     float:left;
     text-align:center;
     font-size: 20px;
-    padding-top:17.5px;
+    padding-top:15px;
 
 }
 
-.resume_column_right{
+
+.contactme_column_right{
 	padding: 0px;
 	margin: 0px auto;
-	font-weight:bold;
-	position:relative;
+	position:absolute;
     width: 50%;
     height: 100%;
     float:right;
@@ -106,3 +131,13 @@ a:hover, a:focus {
 	position:relative;
 	width:80%;
 }
+
+.blog_post_title{
+	float:left;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	font-weight:100;
+}
+

@@ -15,10 +15,10 @@
 </div>
 
 <div class="blog_block">
-	<h2 class="blog_header">Blog</h2>
+	<h1 class="blog_header">Blog</h1>
 	<%  @posts.each do |post| %>
 		<td> 
-			<div class="post_title"> <%= link_to post.title, post %></div>
+			<div class="blog_post_title"> <%= link_to post.title, post %></div>
 			<div class="post_date"> <%=post.created_at %></div>
 			<div class="post_blurb"> <%=post.blurb %> </div>
 		</td>
@@ -27,11 +27,11 @@
 
 </div>
 
-<div class="resume_block">
+<div class="contactme_block">
 	<%= link_to("resume")  do %>
-		<h3 class= "resume_column_left"> Resumé</h3>
+		<h3 class= "contactme_column_left"> Resumé</h3>
 	<% end %>
-	<div class="resume_column_right">
+	<div class="contactme_column_right">
 		<%= link_to image_tag( "twitter-64.ico", :size => "20x20" ), "http://twitter.com/schamtoo", :target => "_blank" %>
 		<%= link_to image_tag( "youtube-64.ico", :size => "20x20"), "http://youtube.com/schamtoo", :target => "_blank" %>
 		<%= link_to image_tag( "facebook-64.ico", :size => "20x20"), "http://www.facebook.com/Kevin-SchAmToo-Pearson-225935654204092/", :target => "_blank" %>
