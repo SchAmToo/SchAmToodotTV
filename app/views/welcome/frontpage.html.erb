@@ -19,7 +19,7 @@
 	<div class="blog_posts_block">
 	<%  @posts.each do |post| %>
 		<td> 
-			<div class="blog_post_title"> <%= link_to post.remote_url, post %></div>
+			<div class="blog_post_title"> <%= link_to post.title, post.remote_url %></div>
 			<div class="post_date"> <%=post.created_at %></div>
 			<div class="post_blurb"> <%=post.blurb %> </div>
 		</td>
