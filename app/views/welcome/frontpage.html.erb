@@ -16,15 +16,18 @@
 
 <div class="blog_block">
 	<h1 class="blog_header">Blog</h1>
-	<div class="blog_posts_block">
+	<tr>
 	<%  @posts.each do |post| %>
-		<td> 
-			<div class="blog_post_title"> <%= link_to post.title, post.remote_url %></div>
-			<div class="post_date"> <%=post.created_at %></div>
-			<div class="post_blurb"> <%=post.blurb %> </div>
-		</td>
+	
+		<div class="blog_post_block">
+			<td> 
+				<div class="blog_post_title"> <%= link_to post.title, post.remote_url %></div>
+				<div class="blog_post_date"> <%=post.created_at %></div>
+				<div class="blog_post_blurb"> <%=post.blurb %> </div>
+			</td>
+		</div>
 	<% end %>
-	</div>
+	</tr>
 
 </div>
 
