@@ -22,7 +22,7 @@
 		<div class="blog_post_block">
 			<td> 
 				<div class="blog_post_title"> <%= link_to post.title, post.remote_url %></div>
-				<div class="blog_post_date"> <%=post.created_at %></div>
+				<div class="blog_post_date"> Posted: <%=post.created_at.month %>-<%=post.created_at.day %></div>
 				<div class="blog_post_blurb"> <%=post.blurb %> </div>
 			</td>
 		</div>
