@@ -10,6 +10,9 @@
 		padding-left: 0%;
     	padding-right: 0%;
 	}
+	.blog_block{
+		width:100%;
+	}
 
 }
 @media (min-width: 600px) {
@@ -22,6 +25,9 @@
 	.contactme_block{
 		padding-left: 10%;
     	padding-right: 10%;
+	}
+	.blog_block{
+		width:80%;
 	}
 }
 .header-container{

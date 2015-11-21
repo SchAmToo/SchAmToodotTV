@@ -23,16 +23,16 @@ input {
 }
 @media (min-width: 600px) {
   .video-player-container{ 
-    width:80%;
+    width:70%;
     padding-bottom: 44.75%; /* 16:9 */
 
   }
   .video-tabs{
-    width:80%;
+    width:70%;
   }
   .admin_block{
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
   }
 }
 .content {
